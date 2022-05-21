@@ -1,10 +1,14 @@
 import React, {FC} from 'react';
-import './styles/_app.scss';
+import './styles/_layout.scss';
+import {Header} from "./components/blocks/Header";
 
 export const App: FC = () => {
   return (
     <div className="layout">
-      Работает
+        <Header />
+        <div className="layout__content">
+
+        </div>
     </div>
   );
 }
