@@ -1,9 +1,9 @@
 import React, {FC} from 'react';
-import './App.css';
+import './styles/_app.scss';
 
 export const App: FC = () => {
   return (
-    <div className="App">
+    <div className="layout">
       Работает
     </div>
   );
