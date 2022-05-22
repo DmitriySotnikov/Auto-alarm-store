@@ -1,17 +1,14 @@
 @import "utils";
 
 .layout{
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
   margin: 0;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
   &__content{
-    background-color: $background-color;
+    background-color: $layout-background-color;
     width: 100%;
     min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
   }
 }

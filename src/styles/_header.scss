@@ -1,6 +1,41 @@
 @import "utils";
 
 .header{
+  margin: 0;
   height: 80px;
-  background-color: #292929;
+  background-color: $header-background-color;
+  @include text-color;
+  &-container{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    @media (max-width: 1201px) {
+      width: 1024px;
+    }
+  }
+  &-inner{
+    @include size;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-logo{
+    font-size: 27px;
+    font-family: $font-number;
+  }
+  &-contact{
+
+  }
+  &-contactItem{
+    display: flex;
+    align-items: center;
+    margin: 5px 0 0 0;
+  }
+  &-contactIcon{
+    width: 17px;
+  }
+  &-contactNumber{
+    font-family: $font-number;
+    margin: 0 0 0 10px;
+  }
 }
