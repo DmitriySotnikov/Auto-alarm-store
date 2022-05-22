@@ -4,6 +4,7 @@
   margin: 0;
   height: 80px;
   background-color: $header-background-color;
+  font-family: $font-number;
   @include text-color;
   &-container{
     width: 1200px;
@@ -35,7 +36,18 @@
     width: 17px;
   }
   &-contactNumber{
-    font-family: $font-number;
     margin: 0 0 0 10px;
+  }
+  &-info{
+
+  }
+  &-infoItem{
+
+  }
+  &-infoIcon{
+
+  }
+  &-infoText{
+
   }
 }

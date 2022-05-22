@@ -2,6 +2,8 @@ import React, {FC} from 'react';
 import '../../../styles/_header.scss'
 import phone from '../../../assets/icon/phone-1.svg'
 import whatsapp from '../../../assets/icon/whatsapp.svg'
+import location from '../../../assets/icon/location.svg'
+import clock from '../../../assets/icon/clock.svg'
 
 export const Header: FC = () => {
     return (
@@ -22,7 +24,15 @@ export const Header: FC = () => {
                         </div>
                     </div>
                     <div className="header-info">
-
+                        <div className="header-infoItem">
+                            <img className="header-infoIcon" src={location} />
+                            <span className="header-infoText">г. Ангарск, 120-й кв-л, строение 54</span>
+                        </div>
+                        <div className="header-infoItem">
+                            <img className="header-infoIcon" src={clock} />
+                            <span className="header-infoText">Пн - Пт :</span>
+                            <span className="header-infoText">9-00 - 19-00</span>
+                        </div>
                     </div>
                 </div>
             </div>
