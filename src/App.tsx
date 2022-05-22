@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import './styles/_layout.scss';
 import './styles/_container.scss'
 import {Header} from "./components/blocks/Header";
+import {Catalog} from "./page/catalog";
 
 export const App: FC = () => {
   return (
@@ -9,7 +10,7 @@ export const App: FC = () => {
         <Header />
         <div className="layout__content">
             <div className="container">
-                КОНТЕНТ
+                <Catalog/>
             </div>
         </div>
     </div>

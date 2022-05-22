@@ -27,10 +27,13 @@
   &-contact{
 
   }
-  &-contactItem{
+  &-item{
     display: flex;
     align-items: center;
     margin: 5px 0 0 0;
+    &_top{
+      margin: 10px 0 0 0;
+    }
   }
   &-contactIcon{
     width: 17px;
@@ -39,15 +42,12 @@
     margin: 0 0 0 10px;
   }
   &-info{
-
-  }
-  &-infoItem{
-
+    padding: 0 35px 0 0;
   }
   &-infoIcon{
-
+    margin: 0 10px 0 0;
   }
   &-infoText{
-
+    font-size: 13px;
   }
 }
