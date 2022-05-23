@@ -4,7 +4,7 @@
   margin: 0;
   height: 80px;
   background-color: $header-background-color;
-  font-family: $font-number;
+  font-family: $font-header;
   @include text-color;
   &-container{
     width: 1200px;
@@ -22,7 +22,7 @@
   }
   &-logo{
     font-size: 27px;
-    font-family: $font-number;
+    font-family: $font-header;
   }
   &-contact{
 

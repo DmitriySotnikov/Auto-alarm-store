@@ -1,0 +1,19 @@
+@mixin button(
+  $buttonWidth,
+   $buttonHeight,
+    $buttonColor,
+     $buttonBackground,
+  $buttonBorderColor,
+  $solid,
+  $radius,
+  $buttonFont
+)
+{
+  width: $buttonWidth;
+  height: $buttonHeight;
+  color: $buttonColor;
+  background-color: $buttonBackground;
+  border: $solid solid $buttonBorderColor;
+  border-radius: $radius;
+  font-size: $buttonFont;
+}
