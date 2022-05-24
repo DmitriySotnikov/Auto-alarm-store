@@ -1,0 +1,49 @@
+@import "button";
+@import "utils";
+
+$values: 210px, 50px, $violet, $layout-background-color, $violet, 2px, 35px, 17px;
+
+.trigger{
+@include button($values...);
+  font-family: $font-header;
+  display: flex;
+  align-items: center;
+  &-icon{
+    height: 14px;
+    width: 20px;
+    transition: height .2s;
+    position: relative;
+    padding: 0 12px 0 14px;
+    &:before{
+      content: '';
+      top: 0;
+      height: 2px;
+      width: inherit;
+      background: $violet;
+      box-sizing: border-box;
+      position: absolute;
+    }
+    &:after{
+      content: '';
+      bottom: 0;
+      height: 2px;
+      width: inherit;
+      background: $violet;
+      box-sizing: border-box;
+      position: absolute;
+    }
+  }
+  &-iconLine{
+    top: 6px;
+    width: inherit;
+    height: 2px;
+    background: $violet;
+    position: absolute;
+    &_active{
+      display: none;
+    }
+  }
+  &-text{
+    cursor: pointer;
+  }
+}
