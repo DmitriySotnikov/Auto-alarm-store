@@ -11,14 +11,14 @@ $values: 210px, 50px, $violet, $layout-background-color, $violet, 2px, 35px, 17p
   cursor: pointer;
   user-select: none;
   white-space: nowrap;
-  //transition: background-color .15s;
+  transition: background-color .2s;
   &:hover{
-    background: #1D1D1D;
+    background: $triggerHover;
   }
   &_active{
-    background-color: #BB86FC;
+    background-color: $violet;
     &:hover{
-      background-color: #B377FD;
+      background-color: $violetHover;
     }
   }
   &-icon{
@@ -52,11 +52,11 @@ $values: 210px, 50px, $violet, $layout-background-color, $violet, 2px, 35px, 17p
     &_active{
       &:before{
         transform: translateY(5px) rotate(45deg) scaleX(1.4);
-        background: #121212;
+        background: $layout-background-color;
       }
       &:after{
         transform: translateY(-5px) rotate(-45deg) scaleX(1.4);
-        background: #121212;
+        background: $layout-background-color;
       }
     }
   }
@@ -73,7 +73,7 @@ $values: 210px, 50px, $violet, $layout-background-color, $violet, 2px, 35px, 17p
   &-text{
     padding: 0 0 0 10px;
     &_active{
-      color: #121212;
+      color: $layout-background-color;
     }
   }
 }
