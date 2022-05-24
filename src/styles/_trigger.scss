@@ -4,24 +4,40 @@
 $values: 210px, 50px, $violet, $layout-background-color, $violet, 2px, 35px, 17px;
 
 .trigger{
-@include button($values...);
+  @include button($values...);
   font-family: $font-header;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  //transition: background-color .15s;
+  &:hover{
+    background: #1D1D1D;
+  }
+  &_active{
+    background-color: #BB86FC;
+    &:hover{
+      background-color: #B377FD;
+    }
+  }
   &-icon{
-    height: 14px;
-    width: 20px;
-    transition: height .2s;
+    height: 12px;
+    width: 14px;
+    transition: 1s;
     position: relative;
-    padding: 0 12px 0 14px;
+    padding: 0;
+    margin-left: 19px;
     &:before{
       content: '';
       top: 0;
+      left: 0;
+      right: 0;
       height: 2px;
-      width: inherit;
       background: $violet;
       box-sizing: border-box;
       position: absolute;
+      transition: .3s;
     }
     &:after{
       content: '';
@@ -31,10 +47,21 @@ $values: 210px, 50px, $violet, $layout-background-color, $violet, 2px, 35px, 17p
       background: $violet;
       box-sizing: border-box;
       position: absolute;
+      transition: .3s;
+    }
+    &_active{
+      &:before{
+        transform: translateY(5px) rotate(45deg) scaleX(1.4);
+        background: #121212;
+      }
+      &:after{
+        transform: translateY(-5px) rotate(-45deg) scaleX(1.4);
+        background: #121212;
+      }
     }
   }
   &-iconLine{
-    top: 6px;
+    top: 5px;
     width: inherit;
     height: 2px;
     background: $violet;
@@ -44,6 +71,9 @@ $values: 210px, 50px, $violet, $layout-background-color, $violet, 2px, 35px, 17p
     }
   }
   &-text{
-    cursor: pointer;
+    padding: 0 0 0 10px;
+    &_active{
+      color: #121212;
+    }
   }
 }
