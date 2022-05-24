@@ -1,7 +1,7 @@
 .container{
-  width: 1024px;
-  margin: 0 15px;
+  width: 1200px;
+  margin: 0 auto;
   @media (max-width: 1201px) {
-    width: 960px;
+    width: 1024px;
   }
 }

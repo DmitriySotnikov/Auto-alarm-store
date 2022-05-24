@@ -2,9 +2,7 @@ import React, {FC, useState} from 'react';
 import '../../../styles/_trigger.scss'
 
 export const CatalogTrigger: FC = () => {
-
     const [active, setActive] = useState(false)
-    window.console.log(active)
     return (
         <div className={active ? "trigger trigger_active" : "trigger"} onClick={() => setActive(!active)} >
             <div className={active ? "trigger-icon trigger-icon_active" : "trigger-icon"}>

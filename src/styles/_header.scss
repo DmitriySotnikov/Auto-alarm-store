@@ -1,6 +1,7 @@
 @import "utils";
 
 .header{
+  position: relative;
   margin: 0;
   height: 80px;
   background-color: $header-background-color;
@@ -16,6 +17,7 @@
   }
   &-inner{
     @include size;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;

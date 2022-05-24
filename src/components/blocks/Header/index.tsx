@@ -4,6 +4,7 @@ import phone from '../../../assets/icon/phone-1.svg'
 import whatsapp from '../../../assets/icon/whatsapp.svg'
 import location from '../../../assets/icon/location.svg'
 import clock from '../../../assets/icon/clock.svg'
+import {HeaderBottom} from "../HeaderBottom";
 
 export const Header: FC = () => {
     return (
@@ -36,6 +37,7 @@ export const Header: FC = () => {
                     </div>
                 </div>
             </div>
+             <HeaderBottom/>
         </div>
     );
 };
