@@ -2,5 +2,15 @@
 @import "basicButton";
 
 .headerButton{
-
+  @include button(125px, 40px, $text-color, $header-background-color, $button-border, 1px, 35px, 16px);
+  @include displayFlex(center, center, row);
+  cursor: pointer;
+  &-link{
+    color: $text-color;
+    text-decoration: none;
+  }
+  &:hover{
+    background: $button-background-hover;
+    transition: .3s;
+  }
 }

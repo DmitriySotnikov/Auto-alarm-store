@@ -7,6 +7,8 @@
   src: local('Montserrat'), url(../assets/fonts/Montserrat/Montserrat-SemiBold.ttf) format('truetype');
 }
 // Color
+$button-border: #000;
+$button-background-hover: #333;
 $layout-background-color: #121212;
 $header-background-color: #292929;
 $text-color: #E4E4E4;
@@ -21,6 +23,7 @@ $font: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'O
   sans-serif;
 $font-header: 'Montserrat-SemiBold', 'sans-serif';
 
+// Mixin
 @mixin size{
   width: 100%;
   height: 100%;
@@ -28,4 +31,10 @@ $font-header: 'Montserrat-SemiBold', 'sans-serif';
 }
 @mixin text-color{
   color: $text-color;
+}
+@mixin displayFlex($justify,$align,$direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
 }

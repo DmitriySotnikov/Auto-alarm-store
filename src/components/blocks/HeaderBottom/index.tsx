@@ -6,9 +6,11 @@ import {HeaderButton} from "../../simple/HeaderButton";
 export const HeaderBottom = () => {
     return (
         <div className="headerBottom">
-            <div className="container">
+            <div className="container headerBottom_container">
                 <CatalogTrigger/>
-                <HeaderButton/>
+                <div className="headerBottom-mainMenu">
+                    <HeaderButton buttonName={"Записаться"} link={"#"}/>
+                </div>
             </div>
         </div>
     );

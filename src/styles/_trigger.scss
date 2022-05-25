@@ -1,10 +1,9 @@
 @import "basicButton";
 @import "utils";
 
-$values: 210px, 50px, $violet, $layout-background-color, $violet, 2px, 35px, 17px;
-
 .trigger{
-  @include button($values...);
+  @include button(210px, 50px, $violet, $layout-background-color, $violet, 2px, 35px, 17px);
+  min-width: 210px;
   font-family: $font-header;
   display: flex;
   align-items: center;

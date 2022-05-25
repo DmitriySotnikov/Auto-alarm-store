@@ -1,10 +1,17 @@
-import React, {FC} from 'react';
+import React, {FC, ReactNode} from "react";
 import {Link} from "react-router-dom";
+import "../../../styles/_headerButton.scss"
 
-export const HeaderButton: FC = () => {
+interface prop {
+    buttonName: ReactNode
+    link: string
+}
+
+export const HeaderButton: FC<prop> = (
+    {buttonName, link}) => {
     return (
-        <div className="HeaderButton">
-            <Link to={"#"}/>
+        <div className="headerButton">
+            <Link className="headerButton-link" to={link}>{buttonName}</Link>
         </div>
     );
 };
