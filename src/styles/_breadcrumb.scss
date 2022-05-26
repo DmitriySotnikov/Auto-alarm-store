@@ -1,0 +1,25 @@
+@import "utils";
+
+.breadcrumbs{
+  &-list{
+    @include displayFlex(start, center, row);
+    list-style-type: none;
+    padding: 0;
+  }
+  &-home{
+
+  }
+  &-arrow{
+    padding: 0 0 0 20px;
+  }
+  &-link{
+
+  }
+  &-item{
+    text-decoration: none;
+    &:before{
+      content:"";
+      color: #E4E4E4;
+    }
+  }
+}
