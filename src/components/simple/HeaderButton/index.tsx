@@ -11,7 +11,7 @@ export const HeaderButton: FC<prop> = (
     {buttonName, link}) => {
     return (
         <div className="headerButton">
-            <Link className="headerButton-link" to={link}>{buttonName}</Link>
+            <Link className="headerButton-link" to={link} >{buttonName}</Link>
         </div>
     );
 };
