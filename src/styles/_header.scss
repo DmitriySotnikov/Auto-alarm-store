@@ -3,10 +3,12 @@
 .header{
   position: relative;
   margin: 0;
-  height: 80px;
   background-color: $header-background-color;
   font-family: $font-header;
   @include text-color;
+  &-top{
+    height: 80px;
+  }
   &-container{
     width: 1200px;
     height: 100%;

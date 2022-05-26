@@ -18,7 +18,7 @@ export const HeaderBottom = () => {
                             key={e.id}
                         />
                     })}
-                    <Cart/>
+                    <Cart cartCount={7}/>
                 </div>
             </div>
         </div>
