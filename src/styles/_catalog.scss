@@ -1,0 +1,12 @@
+@import "utils";
+
+.catalog{
+  &-title{
+    padding: 15px 0 0 0;
+  }
+  &-titleText{
+    font-size: 27px;
+    font-family: $font;
+    color: $text-color;
+  }
+}
