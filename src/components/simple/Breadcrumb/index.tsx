@@ -12,10 +12,12 @@ export const Breadcrumb: FC = () => {
                     <Link className="breadcrumbs-link" to={"#"} title="Главная">
                         <img className="breadcrumbs-home" src={home}/>
                     </Link>
-                    <img className="breadcrumbs-arrow" src={arrow}/>
                 </li>
                 <li className="breadcrumbs-item">
-                    <Link className="breadcrumbs-link" to={"#"} title="Главная"/>
+                    <Link className="breadcrumbs-link breadcrumbs-link_pos" to={"#"} title="Главная">
+                        Каталог
+                    </Link>
+
                 </li>
             </ul>
         </div>
