@@ -7,6 +7,9 @@ export const Catalog: FC = () => {
             <div className="catalog-title">
                 <span className="catalog-titleText">Автосигнализации</span>
             </div>
+            <div className="catalog-content">
+
+            </div>
         </div>
     );
 };

@@ -2,7 +2,7 @@
 @import "basicButton";
 
 .headerButton{
-  @include button(125px, 40px, $text-color, $header-background-color, $button-border, 1px, 35px, 16px);
+  @include button(125px, 40px, $text-color, $two-background-color, $button-border, 1px, 35px, 16px);
   @include displayFlex(center, center, row);
   cursor: pointer;
   margin: 0 20px 0 0;

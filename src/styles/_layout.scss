@@ -4,10 +4,11 @@
   display: flex;
   flex-direction: column;
   margin: 0;
+  height: 100vh;
   &__content{
     background-color: $layout-background-color;
     width: 100%;
-    min-height: calc(100vh - 80px);
+    height: inherit;
     display: flex;
     justify-content: center;
   }

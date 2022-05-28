@@ -9,4 +9,11 @@
     font-family: $font;
     color: $text-color;
   }
+  &-content{
+    background: $two-background-color;
+    min-height: 60vh;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 20px 35px 0 0;
+  }
 }
