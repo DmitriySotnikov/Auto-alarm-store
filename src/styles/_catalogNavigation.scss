@@ -2,7 +2,7 @@
 
 .catalogNavigation{
   width: 265px;
-  background: $backgroundSubmenu;
+  background: $background-submenu;
   border-radius: 10px;
   height: 50vh; // Убрать!!!
   font-family: $font;
@@ -18,7 +18,7 @@
   &-item{
     width: 220px;
     padding: 20px 0 7px 0;
-    border-bottom: #585858 solid 1px;
+    border-bottom: $nav-bottom solid 1px;
     margin-bottom: 30px;
   }
   &-link{

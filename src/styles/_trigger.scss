@@ -12,12 +12,12 @@
   white-space: nowrap;
   transition: background-color .2s;
   &:hover{
-    background: $triggerHover;
+    background: $trigger-hover;
   }
   &_active{
     background-color: $violet;
     &:hover{
-      background-color: $violetHover;
+      background-color: $violet-hover;
     }
   }
   &-icon{
