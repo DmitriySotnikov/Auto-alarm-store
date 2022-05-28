@@ -1,0 +1,32 @@
+@import "utils";
+
+.catalogNavigation{
+  width: 265px;
+  background: $backgroundSubmenu;
+  border-radius: 10px;
+  height: 50vh; // Убрать!!!
+  font-family: $font;
+  font-size: 13px;
+  &-nav{
+    margin: 15px;
+    background: $two-background-color;
+    color: $text-color;
+    height: calc(100% - 30px);
+    border-radius: 20px;
+    @include displayFlex(space-evenly, center, column)
+  }
+  &-item{
+    width: 220px;
+    padding: 20px 0 7px 0;
+    border-bottom: #585858 solid 1px;
+    margin-bottom: 30px;
+  }
+  &-link{
+    text-decoration: none;
+    color: inherit;
+    &:hover{
+      color: #65BEB5;
+      transition: .2s;
+    }
+  }
+}

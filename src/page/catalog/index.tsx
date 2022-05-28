@@ -1,5 +1,7 @@
 import React, {FC} from 'react';
 import "../../styles/_catalog.scss"
+import {CatalogNavigation} from "../../components/blocks/CatalogNavigation";
+
 
 export const Catalog: FC = () => {
     return (
@@ -8,7 +10,7 @@ export const Catalog: FC = () => {
                 <span className="catalog-titleText">Автосигнализации</span>
             </div>
             <div className="catalog-content">
-
+                <CatalogNavigation />
             </div>
         </div>
     );
