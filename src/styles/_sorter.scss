@@ -1,5 +1,40 @@
 @import "utils";
 
 .sorter{
+  color: $text-color;
+  font-family: $font;
+  font-size: 14px;
+  padding: 15px 15px 0;
+  display: flex;
+  &-title{
+    padding-right: 10px;
+    cursor: default;
+  }
+  &-titleText{
 
+  }
+  &-item{
+    margin: 0 10px;
+    display: flex;
+  }
+  &-itemText{
+    user-select: none;
+    white-space: nowrap;
+    &:hover{
+      color: $catalog-text-hover;
+      cursor: pointer;
+      transition: .2s;
+      border-bottom: $nav-bottom solid 1px;
+    }
+  }
+  &-arrow{
+    position: relative;
+    padding: 0 0 0 15px;
+    bottom: 7px;
+    transition: .5s;
+    &_down{
+      transform: rotateX( 180deg );
+      transition: .5s;
+    }
+  }
 }

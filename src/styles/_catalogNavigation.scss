@@ -25,7 +25,7 @@
     text-decoration: none;
     color: inherit;
     &:hover{
-      color: #65BEB5;
+      color: $catalog-text-hover;
       transition: .2s;
     }
   }
