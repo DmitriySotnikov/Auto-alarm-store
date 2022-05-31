@@ -1,7 +1,17 @@
 @import "utils";
 
 .filterRange{
+  position: relative;
+  height: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  //touch-action: none;
+  overflow: hidden;
   &-input{
     position: absolute;
+    width: 100%;
+    //appearance: none;
+    //background: transparent;
+    pointer-events: none;
   }
 }
