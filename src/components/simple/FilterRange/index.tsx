@@ -22,8 +22,8 @@ export const FilterRange: FC = () => {
         console.log(event.target)
     }
     return (
-        <div className="filterRange" onChange={handleChangeDiv}>
-            <input className="filterRange-input"
+        <div className="filterRange" onChange={handleChangeDiv} >
+            <input className="filterRange-input" style={{right: "8px"}}
                    id="typeinp"
                    type="range"
                    min="0"
@@ -33,7 +33,7 @@ export const FilterRange: FC = () => {
                    step="1"
                    onClick={() => {console.log("клик")}}
             />
-            <input className="filterRange-input"
+            <input className="filterRange-input" style={{left: "8px"}}
                    id="typeinp"
                    type="range"
                    min="0"
