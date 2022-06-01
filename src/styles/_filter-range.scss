@@ -1,17 +1,14 @@
 @import "utils";
 
 .filterRange{
+  width: calc(100%);
+  display: flex;
   position: relative;
-  height: 20px;
-  box-sizing: border-box;
-  width: calc(100% - 15px);
-  //touch-action: none;
-  //overflow: hidden;
   &-input{
-    position: absolute;
-    width: calc(100% - 5px);
-    appearance: none;
-    background: transparent;
-    //pointer-events: none;
+    margin: 0 5px;
+    font-size: 17px;
+  }
+  &-prefix{
+
   }
 }

@@ -18,31 +18,32 @@ export const FilterRange: FC = () => {
         setMaxVal(() => Number(event.target.value))
         //console.log(event.target.value)
     }
-    const handleChangeDiv = (event: ChangeEvent<HTMLInputElement>) => {
-        console.log(event.target)
-    }
+
     return (
-        <div className="filterRange" onChange={handleChangeDiv} >
-            <input className="filterRange-input" style={{right: "8px"}}
-                   id="typeinp"
-                   type="range"
-                   min="0"
-                   max="50"
-                   value={minVal}
-                   onChange={handleChangeMin}
-                   step="1"
-                   onClick={() => {console.log("клик")}}
-            />
-            <input className="filterRange-input" style={{left: "8px"}}
-                   id="typeinp"
-                   type="range"
+        <div className="filterRange">
+            <div className="filterRange-item">
+                <input className="filterRange-input"
+                       id="min"
+                       type="number"
+                       min="0"
+                       max="50"
+                       value={minVal}
+                       onChange={handleChangeMin}
+                       step="1"
+                       placeholder="От"
+                />
+                <span className="filterRange-prefix">От:</span>
+            </div>
+            <input className="filterRange-input"
+                   id="max"
+                   type="number"
                    min="0"
                    max="50"
                    value={maxVal}
                    onChange={handleChangeMax}
                    step="1"
-                   onClick={() => {console.log("клик")}}
             />
+            <span className="filterRange-prefix">До:</span>
         </div>
     );
 };
