@@ -22,7 +22,7 @@ export const FilterRange: FC = () => {
     return (
         <div className="filterRange">
             <div className="filterRange-title">
-                <span className="filterRange-titleText">Цена</span>
+                <span className="filterRange-titleText">Цена, ₽</span>
             </div>
             <div className="filterRange-content">
                 <div className="filterRange-item">

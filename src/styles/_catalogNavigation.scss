@@ -15,7 +15,10 @@
     color: $text-color;
     height: calc(100% - 30px);
     border-radius: 20px;
-    @include displayFlex(space-evenly, center, column)
+    @include displayFlex(space-evenly, center, column);
+    &_filter{
+      justify-content: start;
+    }
   }
   &-item{
     width: 220px;

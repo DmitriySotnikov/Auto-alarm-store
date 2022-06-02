@@ -3,6 +3,7 @@ import {catalogLink} from "../../../util/catalogLink"
 import "../../../styles/_catalogNavigation.scss"
 import {Link} from "react-router-dom";
 import {FilterRange} from "../../simple/FilterRange";
+import {CheckBoxField} from "../../simple/FilterCheckBox";
 
 export const CatalogNavigation: FC = () => {
 
@@ -10,8 +11,11 @@ export const CatalogNavigation: FC = () => {
 
     return (
         <div className="catalogNavigation">
-            <nav className="catalogNavigation-nav">
+            <nav className={flag ?
+                "catalogNavigation-nav"
+                : "catalogNavigation-nav catalogNavigation-nav_filter"}>
                 <FilterRange/>
+                <CheckBoxField/>
                 {flag && catalogLink.map(e => {
                     return (
                         <div className="catalogNavigation-item">
