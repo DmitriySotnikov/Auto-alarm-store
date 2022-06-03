@@ -1,5 +1,5 @@
 import React, {ChangeEvent, FC} from 'react';
-import "../../../styles/_checkbox.scss"
+import "../../../styles/_filterItem.scss"
 
 export const CheckBoxField: FC = () => {
 
@@ -9,15 +9,27 @@ export const CheckBoxField: FC = () => {
     }
 
     return (
-        <div className="checkbox">
-            <label className="checkbox-label">
-                <input className="checkbox-input"
+        <div className="filterItem">
+            <hr className="filterItem-separator"/>
+            <span className="filterItem-title">Автозапуск</span>
+            <div className="filterItem-checkboxList">
+                <label className="filterItem-label">
+                <input className="filterItem-input"
                        type="checkbox"
                        onChange={handler}
                        />
-                <span className="checkbox-icon"/>
-                <span className="checkbox-textTitle">С автозапуском</span>
+                <span className="filterItem-icon"/>
+                <span className="filterItem-textSelector">есть</span>
             </label>
+            <label className="filterItem-label">
+                <input className="filterItem-input"
+                       type="checkbox"
+                       onChange={handler}
+                       />
+                <span className="filterItem-icon"/>
+                <span className="filterItem-textSelector">нет</span>
+            </label>
+            </div>
         </div>
     );
 };

@@ -23,8 +23,8 @@ $tag-button: #424242;
 
 // Fonts
 $font: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+sans-serif;
 $font-header: 'Montserrat-SemiBold', 'sans-serif';
 
 // Mixin
@@ -37,8 +37,21 @@ $font-header: 'Montserrat-SemiBold', 'sans-serif';
   color: $text-color;
 }
 @mixin displayFlex($justify,$align,$direction) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-    flex-direction: $direction;
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+// hide-tag
+
+@mixin hide{
+  clip: rect(0 0 0 0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }

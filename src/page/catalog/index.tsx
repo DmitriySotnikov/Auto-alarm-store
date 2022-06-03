@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import "../../styles/_catalog.scss"
-import {CatalogNavigation} from "../../components/blocks/CatalogNavigation";
+import {CatalogSide} from "../../components/blocks/CatalogSide";
 import {Sorter} from "../../components/blocks/Sorter";
 import {Tags} from "../../components/blocks/Tags";
 import {Cards} from "../../components/simple/MenuCards";
@@ -16,7 +16,7 @@ export const Catalog: FC = () => {
                 <h1 className="catalog-titleText">Автосигнализации</h1>
             </div>
             <div className="catalog-content">
-                <CatalogNavigation />
+                <CatalogSide />
                 <div className="catalog-row">
                     {flag && <Cards/>}
                     {flag && <Sorter/>}
