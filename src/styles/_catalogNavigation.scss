@@ -15,23 +15,5 @@
     color: $text-color;
     height: calc(100% - 30px);
     border-radius: 20px;
-    @include displayFlex(space-evenly, center, column);
-    &_filter{
-      justify-content: start;
-    }
-  }
-  &-item{
-    width: 220px;
-    padding: 20px 0 7px 0;
-    border-bottom: $nav-bottom solid 1px;
-    margin-bottom: 30px;
-  }
-  &-link{
-    text-decoration: none;
-    color: inherit;
-    &:hover{
-      color: $catalog-text-hover;
-      transition: .2s;
-    }
   }
 }
