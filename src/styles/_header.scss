@@ -20,9 +20,7 @@
   &-inner{
     @include size;
     height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include displayFlex(space-between, center, row);
   }
   &-logo{
     font-size: 27px;

@@ -10,6 +10,6 @@
   }
   &-mainMenu{
     width: 100%;
-    @include displayFlex(end, end, row);
+    @include displayFlex(flex-end, flex-end, row);
   }
 }

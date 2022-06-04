@@ -2,7 +2,7 @@
 
 .breadcrumbs{
   &-list{
-    @include displayFlex(start, center, row);
+    @include displayFlex(flex-start, center, row);
     list-style-type: none;
     padding: 0;
   }
