@@ -1,4 +1,5 @@
 import React, {ChangeEvent, FC, useState} from 'react';
+import {filterItems} from "../../../util/catalog"
 import "../../../styles/_filterItem.scss"
 
 export const CheckBoxField: FC = () => {
