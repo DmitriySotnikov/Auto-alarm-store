@@ -1,11 +1,16 @@
-import React, {ChangeEvent, FC} from 'react';
+import React, {ChangeEvent, FC, useState} from 'react';
 import "../../../styles/_filterItem.scss"
 
 export const CheckBoxField: FC = () => {
 
+    const [active, setActive] = useState<boolean>(false)
+    const [active_1, setActive_1] = useState<boolean>(false)
+
     const handler = (event: ChangeEvent<HTMLInputElement>) => {
-        console.log(event.target.checked)
-        console.log(event.target.value)
+        setActive(event.target.checked)
+    }
+    const handler_1 = (event: ChangeEvent<HTMLInputElement>) => {
+        setActive_1(event.target.checked)
     }
 
     return (
@@ -17,8 +22,12 @@ export const CheckBoxField: FC = () => {
                     <input className="filterItem-input"
                            type="checkbox"
                            onChange={handler}
+                           checked={active}
                     />
-                    <span className="filterItem-icon"/>
+                    <span className={active ?
+                        "filterItem-icon filterItem-icon_checked" :
+                        "filterItem-icon"
+                    }/>
                     <div className="filterItem-selector">
                         <span className="filterItem-selectorText">есть</span>
                         <span className="filterItem-selectorCount">5</span>
@@ -27,9 +36,12 @@ export const CheckBoxField: FC = () => {
                 <label className="filterItem-label">
                     <input className="filterItem-input"
                            type="checkbox"
-                           onChange={handler}
+                           onChange={handler_1}
                     />
-                    <span className="filterItem-icon"/>
+                    <span className={active_1 ?
+                        "filterItem-icon filterItem-icon_checked" :
+                        "filterItem-icon"
+                    }/>
                      <div className="filterItem-selector">
                         <span className="filterItem-selectorText">нет</span>
                         <span className="filterItem-selectorCount">0</span>
