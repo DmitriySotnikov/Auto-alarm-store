@@ -11,9 +11,9 @@
     margin: 0 0 20px 0;
     width: 800px;
     height: 215px;
-    background: $background-submenu;
+    //background: $background-submenu;
     border-radius: 20px;
-    border: $violet solid 1px;
+    border: #643c53 solid 2px;
     @include displayFlex(space-between, center, row)
   }
   &-itemBlock{
@@ -23,8 +23,8 @@
   &-img{
     width: 180px;
     height: 170px;
-    border-radius: 7px;
-    padding: 0 15px;
+    border-radius: 10px;
+    margin: 0 15px;
   }
   &-title{
     letter-spacing: 0.2rem;

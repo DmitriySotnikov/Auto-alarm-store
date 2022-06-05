@@ -68,5 +68,26 @@ export const filterItems = [
                 count: 9
             }
         ]
-    }
+    },
+    {
+        id: 0,
+        title: "GPS (координаты)",
+        checkbox: [
+            {
+                id: 0,
+                name: "есть",
+                count: 7
+            },
+            {
+                id: 1,
+                name: "нет",
+                count: 1
+            },
+            {
+                id: 1,
+                name: "можно подключить отдельно",
+                count: 10
+            }
+        ]
+    },
 ]

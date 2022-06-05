@@ -1,14 +1,15 @@
 import React, {FC} from 'react';
 import "../../styles/_catalog.scss"
-import {CatalogSide} from "../../components/blocks/CatalogSide";
+import {Sidebar} from "../../components/blocks/CatalogSide";
 import {Sorter} from "../../components/blocks/Sorter";
 import {Tags} from "../../components/blocks/Tags";
 import {Cards} from "../../components/simple/MenuCards";
+import {ProductItem} from "../../components/blocks/ProductItem";
 
 
 export const Catalog: FC = () => {
 
-    const flag = false
+    const flag = true
 
     return (
         <div className="catalog">
@@ -16,11 +17,11 @@ export const Catalog: FC = () => {
                 <h1 className="catalog-titleText">Автосигнализации</h1>
             </div>
             <div className="catalog-content">
-                <CatalogSide />
-                <div className="catalog-row">
-                    {flag && <Cards/>}
+                <Sidebar />
+                <div className="catalog-right">
                     {flag && <Sorter/>}
                     {flag && <Tags/>}
+                    {flag && <ProductItem/>}
                 </div>
             </div>
         </div>

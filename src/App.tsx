@@ -9,7 +9,7 @@ export const App: FC = () => {
   return (
     <div className="layout">
         <Header />
-        <div className="layout__content">
+        <div className="layout-content">
             <div className="container">
                 <Breadcrumb/>
                 <Catalog/>

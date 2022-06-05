@@ -7,7 +7,7 @@
   @include displayFlex(flex-start, flex-start, column);
   font-weight: 500;
   &-separator{
-    margin: 15px 0;
+    margin: 30px 0 15px 0;
     border-color: $separator-border;
     width: 100%;
   }

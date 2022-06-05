@@ -5,10 +5,9 @@
   flex-direction: column;
   margin: 0;
   height: 100vh;
-  &__content{
+  &-content{
     background-color: $layout-background-color;
     width: 100%;
-    height: inherit;
     display: flex;
     justify-content: center;
   }

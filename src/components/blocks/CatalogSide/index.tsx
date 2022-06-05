@@ -1,12 +1,12 @@
 import React, {FC} from 'react';
-import "../../../styles/_catalogSide.scss"
+import "../../../styles/_sidebar.scss"
 import {NavigationItems} from "../../simple/NavigationItem";
 import {CatalogFilters} from "../CatalogFilters";
 
-export const CatalogSide: FC = () => {
+export const Sidebar: FC = () => {
     return (
-        <div className="catalogSide">
-            <div className="catalogSide-content">
+        <div className="sidebar">
+            <div className="sidebar-content">
                 <CatalogFilters/>
             </div>
         </div>
