@@ -6,33 +6,32 @@
   font-size: 14px;
   padding: 15px 15px 0;
   display: flex;
-  &-title{
+  &__title{
     padding-right: 10px;
     cursor: default;
   }
-  &-titleText{
+  &__title-text{
 
   }
-  &-item{
+  &__item{
     margin: 0 10px;
     display: flex;
   }
-  &-itemText{
+  &__item-text{
     user-select: none;
     white-space: nowrap;
     &:hover{
-      color: $catalog-text-hover;
+      color: #d86479;
       cursor: pointer;
       transition: .2s;
-      border-bottom: $nav-bottom solid 1px;
     }
   }
-  &-arrow{
+  &__arrow{
     position: relative;
     padding: 0 0 0 15px;
     bottom: 7px;
     transition: .5s;
-    &_down{
+    &--down{
       transform: rotateX( 180deg );
       transition: .5s;
     }

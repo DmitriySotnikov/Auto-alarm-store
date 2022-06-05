@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import "../../../styles/_productItem.scss"
 import alarm from "../../../assets/icon/alarm.jpg";
+import heart from "../../../assets/icon/heart.svg"
 import {Link} from "react-router-dom";
 
 export const ProductItem: FC = () => {
@@ -17,7 +18,11 @@ export const ProductItem: FC = () => {
                     <span className="product-item__product-name">Pandora DXL - UX 4150</span>
                     <span className="product-item__stars-line product-item__stars-line--4"/>
                 </div>
-                <Link to={"#"} className="product-item__submit-button">Подробнее</Link>
+                <div className="product-item__buy">
+                    <span className="product-item__price">22 761 ₽</span>
+                    <img className="product-item__to-favorite" src={heart}/>
+                    <Link className="product-item__submit-button" to={"#"}>Купить</Link>
+                </div>
             </div>
         </div>
     );
