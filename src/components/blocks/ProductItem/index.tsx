@@ -15,9 +15,7 @@ export const ProductItem: FC = () => {
                 <div className="product-item__info">
                     <span className="product-item__info-title">Автосигнализации</span>
                     <span className="product-item__product-name">Pandora DXL - UX 4150</span>
-                    <div className="product-item__star">
-
-                    </div>
+                    <span className="product-item__stars-line product-item__stars-line--4"/>
                 </div>
                 <Link to={"#"} className="product-item__submit-button">Подробнее</Link>
             </div>

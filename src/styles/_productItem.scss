@@ -46,6 +46,18 @@
     letter-spacing: 0.11rem;
     padding: 7px 0;
   }
+  &__stars{
+
+  }
+  &__stars-line{
+    background: url("../assets/icon/stars-line.svg") no-repeat;
+    width: 122px;
+    height: 23px;
+    margin: 15px 0 0 0;
+  }
+  &__stars-line--4{
+    background-position-x: calc(0% + 20%);
+  }
   &__submit-button{
     text-decoration: none;
     margin: 0 20px;
