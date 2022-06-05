@@ -5,13 +5,21 @@ import {Link} from "react-router-dom";
 
 export const ProductItem: FC = () => {
     return (
-        <div className="menuCards">
-            <div className="menuCards-item">
-                <div className="menuCards-itemBlock">
-                    <img className="menuCards-img" src={alarm}/>
-                    <span className="menuCards-title">Автосигнализации</span>
+        <div className="product-item">
+            <div className="product-item__content">
+                <div className="product-item__img-block">
+                    <Link className="product-item__link" to={"#"}>
+                        <img className="product-item__img" src={alarm}/>
+                    </Link>
                 </div>
-                <Link to={" "} className="menuCards-submitButton">Подробнее</Link>
+                <div className="product-item__info">
+                    <span className="product-item__info-title">Автосигнализации</span>
+                    <span className="product-item__product-name">Pandora DXL - UX 4150</span>
+                    <div className="product-item__star">
+
+                    </div>
+                </div>
+                <Link to={"#"} className="product-item__submit-button">Подробнее</Link>
             </div>
         </div>
     );

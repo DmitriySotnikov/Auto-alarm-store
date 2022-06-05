@@ -1,36 +1,52 @@
 @import "utils";
 @import "basicButton";
 
-.menuCards{
-  font-family: $font-header;
+.product-item{
+  font-family: $font;
   font-size: 23px;
   color: $text-color;
   width: 100%;
   @include displayFlex(center, center, column);
-  &-item{
+  &__content{
+    padding: 10px 0;
     margin: 0 0 20px 0;
     width: 800px;
-    height: 215px;
+    height: 195px;
     //background: $background-submenu;
     border-radius: 20px;
     border: #643c53 solid 2px;
     @include displayFlex(space-between, center, row)
   }
-  &-itemBlock{
-    display: flex;
-    align-items: center;
+  &__img-block{
+
   }
-  &-img{
-    width: 180px;
-    height: 170px;
+  &__link{
+
+  }
+  &__img{
+    width: 195px;
+    height: 185px;
     border-radius: 10px;
     margin: 0 15px;
   }
-  &-title{
-    letter-spacing: 0.2rem;
+  &__info{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    @include displayFlex(flex-start, flex-start, column)
+  }
+  &__info-title{
+    font-size: 14px;
+    letter-spacing: 0.11rem;
     cursor: default;
   }
-  &-submitButton{
+  &__product-name{
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.11rem;
+    padding: 7px 0;
+  }
+  &__submit-button{
     text-decoration: none;
     margin: 0 20px;
     @include displayFlex(center, center, row);
