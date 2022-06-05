@@ -12,14 +12,14 @@
       background: $tag-hover;
       transition: .2s;
     }
-  &-item{
+  &__item{
     @include button(max-content, 27px, $text-color, $tag-button, $tag-button, 1px, 20px, 14px);
 
     @include displayFlex(center, center, row);
     padding: 1px 5px;
     margin: 0 10px;
   }
-  &-link{
+  &__link{
     text-decoration: none;
     color:$text-color;
   }
