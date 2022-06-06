@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {Link} from "react-router-dom";
 import "../../../styles/_navigationItems.scss"
-import {catalogLink} from "../../../util/catalog"
+import {catalogLink} from "../../../util/catalog_mock_data"
 
 
 export const NavigationItems: FC = () => {

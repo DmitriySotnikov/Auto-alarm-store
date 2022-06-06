@@ -91,3 +91,43 @@ export const filterItems = [
         ]
     },
 ]
+
+//import img from "../../assets/icon/dx90lora.jpg" Пример импорта картинки
+
+export const products = [
+    {
+        id: 0,
+        type: "Автосигнализации",
+        name: "Pandora DXL - UX 4150",
+        price: "49 914",
+        src: ""
+    },
+    {
+        id: 1,
+        type: "Автосигнализации",
+        name: "Pandora DX-9x LoRa",
+        price: "23 545",
+        src: ""
+    },
+    {
+        id: 2,
+        type: "Автосигнализации",
+        name: "Pandora DX-6x LoRa",
+        price: "15 675",
+        src: ""
+    },
+    {
+        id: 3,
+        type: "Автосигнализации",
+        name: "Pandect X-1900BT",
+        price: "38 757",
+        src: ""
+    },
+    {
+        id: 4,
+        type: "Автосигнализации",
+        name: "Pandora DX-57R",
+        price: "15 515",
+        src: ""
+    }
+]
