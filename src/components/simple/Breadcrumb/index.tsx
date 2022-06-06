@@ -9,7 +9,7 @@ export const Breadcrumb: FC = () => {
             <ul className="breadcrumbs-list">
                 <li className="breadcrumbs-item">
                     <Link className="breadcrumbs-linkHome" to={"#"} title="Главная">
-                        <img className="breadcrumbs-home" src={home}/>
+                        <img className="breadcrumbs-home" src={home} alt={""}/>
                     </Link>
                 </li>
                 <li className="breadcrumbs-item breadcrumbs-item_arrow">

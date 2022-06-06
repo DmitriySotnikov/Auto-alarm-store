@@ -14,7 +14,7 @@ export const ProductItem: FC = () => {
                             <div className="product-item__content">
                                 <div className="product-item__img-block">
                                     <Link className="product-item__link" to={"#"}>
-                                        <img className="product-item__img" src={img}/>
+                                        <img className="product-item__img" src={img} alt={""}/>
                                     </Link>
                                 </div>
                                 <div className="product-item__info">
@@ -25,7 +25,7 @@ export const ProductItem: FC = () => {
                                 <div className="product-item__buy">
                                     <span className="product-item__price">{`${el.price} ₽`}</span>
                                     <div className="product-item__favorite-img">
-                                        <img className="product-item__to-favorite" src={heart}/>
+                                        <img className="product-item__to-favorite" src={heart} alt={""}/>
                                     </div>
                                     <Link className="product-item__submit-button" to={"#"}>Купить</Link>
                                 </div>
