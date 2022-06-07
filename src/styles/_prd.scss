@@ -3,10 +3,31 @@
 .prd{
   color: $text-color;
   font-family: $font;
+  padding: 25px 20px;
   &__header{
-
+    @include displayFlex(flex-start, flex-start, column)
   }
   &__header-text{
     font-size: 30px;
+    font-weight: 600;
+    margin-block: 0;
+  }
+  &__header-rating{
+    font-size: 13px;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+  }
+  &__header-rating-stars-line{
+    display: inline-block;
+    background: url("../assets/icon/stars-line.svg") no-repeat;
+    width: 122px;
+    height: 23px;
+    &--4{
+      background-position-x: calc(0% + 20%);
+    }
+  }
+  &__header-rating-count{
+    padding: 0 15px;
   }
 }
