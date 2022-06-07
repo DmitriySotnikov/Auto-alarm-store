@@ -5,11 +5,12 @@ import {Sorter} from "../../components/blocks/Sorter";
 import {Tags} from "../../components/blocks/Tags";
 import {Cards} from "../../components/simple/MenuCards";
 import {ProductItem} from "../../components/blocks/ProductItem";
+import {Product} from "../../components/blocks/Product";
 
 
 export const Catalog: FC = () => {
 
-    const flag = true
+    const flag = false
 
     return (
         <div className="catalog">
@@ -17,12 +18,13 @@ export const Catalog: FC = () => {
                 <h1 className="catalog-titleText">Автосигнализации</h1>
             </div>
             <div className="catalog-content">
-                <Sidebar />
-                <div className="catalog-right">
+                <Product/>
+                {flag && <Sidebar />}
+                {flag && <div className="catalog-right">
                     {flag && <Sorter/>}
                     {flag && <Tags/>}
                     {flag && <ProductItem/>}
-                </div>
+                </div>}
             </div>
         </div>
     );

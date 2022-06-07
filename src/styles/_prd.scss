@@ -1,0 +1,12 @@
+@import "utils";
+
+.prd{
+  color: $text-color;
+  font-family: $font;
+  &__header{
+
+  }
+  &__header-text{
+    font-size: 30px;
+  }
+}
