@@ -1,5 +1,10 @@
 @import "utils";
 
+@mixin border-box($color, $solid, $radius){
+  border: $color solid $solid;
+  border-radius: $radius;
+}
+
 .prd{
   color: $text-color;
   font-family: $font;
@@ -60,17 +65,44 @@
   &__average-block{
     width: 325px;
     height: 100%;
+    @include displayFlex(space-between, center, column)
   }
   &__price-wrap{
     width: 325px;
     height: 60px;
-    border: #643c53 solid 2px;
-    border-radius: 20px;
+    @include border-box($dark-violet, 2px, 20px);
     @include displayFlex(center, center, row);
   }
   &__price{
     font-size: 20px;
     font-weight: 600;
-    letter-spacing: 2.5px;
+    letter-spacing: 0.2em;
+  }
+  &__attributes{
+    font-size: 14px;
+    width: 100%;
+    @include border-box($dark-violet, 2px, 20px);
+    @include displayFlex(center, center, row);
+  }
+  &__list{
+    list-style: none;
+    padding: 15px 5px;
+    margin: 0;
+  }
+  &__list-item{
+    padding: 5px 0;
+  }
+  &__item-value{
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    &:before{
+      color: $text-color;
+      content: " \2013";
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      width: 7px;
+      padding: 0 15px;
+    }
   }
 }

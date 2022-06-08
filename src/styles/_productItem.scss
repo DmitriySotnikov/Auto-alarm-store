@@ -16,7 +16,7 @@
     width: 800px;
     height: 195px;
     border-radius: 20px;
-    border: $product-item-border solid 2px;
+    border: $dark-violet solid 2px;
     @include displayFlex(space-between, center, row)
   }
   &__img-block{
