@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import "../../../styles/_prd.scss"
 import comments from "../../../assets/icon/comment.svg"
+import heart from "../../../assets/icon/heart.svg"
 
 export const Product: FC = () => {
     return (
@@ -68,7 +69,17 @@ export const Product: FC = () => {
                     </ul>
                 </div>
             </div>
-
+            <div className="prd__sale-block">
+                <div className="prd__buy-button">
+                    Купить
+                </div>
+                <div className="prd__favorite-button">
+                    <img src={heart}/>
+                </div>
+                <div className="prd__delivery">
+                    <span className="prd__delivery-title">Доставка :</span>
+                </div>
+            </div>
         </div>
     );
 };
