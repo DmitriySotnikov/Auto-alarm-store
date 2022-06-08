@@ -12,8 +12,15 @@ export const Product: FC = () => {
                     <span className="prd__rating-count">5 баллов</span>
                     <span className="prd__reviews-count">( 10 голосов )</span>
                 </div>
-                <div>
-                    <img src={comments}/>
+                <div className="prd__comment-block">
+                    <img className="prd__comment-icon" src={comments}/>
+                    <span className="prd__comment-title">Комментариев</span>
+                    <span className="prd__comment-count">15</span>
+                </div>
+            </div>
+            <div className="prd__average-block">
+                <div className="prd__price-wrap">
+                    <span className="prd__price">34 059 ₽</span>
                 </div>
             </div>
 
