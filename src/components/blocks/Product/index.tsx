@@ -6,8 +6,14 @@ import heart from "../../../assets/icon/heart.svg"
 export const Product: FC = () => {
     return (
         <div className="prd">
+            <div className="prd__title">
+                <h1 className="prd__title-name">Pandora DX 4GL plus</h1>
+                <div className="prd__favorite-button">
+                    <span className="prd__favorite-text">В избранное</span>
+                    <img className="prd__favorite-icon" src={heart}/>
+                </div>
+            </div>
             <div className="prd__header">
-                <h1 className="prd__header-text">Pandora DX 4GL plus</h1>
                 <div className="prd__rating-reviews">
                     <span className="prd__rating-stars-line product-rating-stars-line--4"/>
                     <span className="prd__rating-count">5 баллов</span>
@@ -72,9 +78,6 @@ export const Product: FC = () => {
             <div className="prd__sale-block">
                 <div className="prd__buy-button">
                     Купить
-                </div>
-                <div className="prd__favorite-button">
-                    <img src={heart}/>
                 </div>
                 <div className="prd__delivery">
                     <span className="prd__delivery-title">Доставка :</span>
