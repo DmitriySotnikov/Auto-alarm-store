@@ -1,7 +1,7 @@
 import React, {FC} from "react";
 import {Link} from "react-router-dom";
 import "../../../styles/_headerBottom.scss";
-import "../../../styles/_cart.scss"
+import "../../../styles/_cart-mini.scss"
 import cart from "../../../assets/icon/basket.svg";
 
 interface prop {

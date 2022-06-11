@@ -4,7 +4,7 @@
   position: relative;
   margin: 0;
   background-color: $two-background-color;
-  font-family: $font-header;
+  font-family: $font-bold;
   @include text-color;
   &-top{
     height: 80px;
@@ -24,7 +24,7 @@
   }
   &-logo{
     font-size: 27px;
-    font-family: $font-header;
+    font-family: $font-bold;
   }
   &-contact{
 

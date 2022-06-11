@@ -6,6 +6,7 @@ import {Tags} from "../../components/blocks/Tags";
 import {Cards} from "../../components/simple/MenuCards";
 import {ProductItem} from "../../components/blocks/ProductItem";
 import {Product} from "../../components/blocks/Product";
+import {Cart} from "../../components/blocks/Cart";
 
 
 export const Catalog: FC = () => {
@@ -18,7 +19,7 @@ export const Catalog: FC = () => {
                 <h1 className="catalog-titleText">Автосигнализации</h1>
             </div>
             <div className="catalog-content">
-                <Product/>
+                <Cart/>
                 {flag && <Sidebar />}
                 {flag && <div className="catalog-right">
                     {flag && <Sorter/>}

@@ -1,10 +1,5 @@
 @import "utils";
 
-@mixin border-box($color, $solid, $radius){
-  border: $color solid $solid;
-  border-radius: $radius;
-}
-
 .prd{
   color: $text-color;
   font-family: $font;

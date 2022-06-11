@@ -3,7 +3,7 @@ import {button} from "../../../util/button"
 import '../../../styles/_headerBottom.scss'
 import {CatalogTrigger} from "../../simple/CatalogTrigger";
 import {HeaderButton} from "../../simple/HeaderButton";
-import {Cart} from "../../simple/Cart";
+import {Cart} from "../../simple/CartMini";
 
 export const HeaderBottom = () => {
     return (
