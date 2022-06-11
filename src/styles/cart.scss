@@ -20,9 +20,12 @@
     font-size: 14px;
     color: $text-disable;
   }
+  &__content{
+    padding: 35px 0 0 0;
+    @include displayFlex(space-between, flex-start, row);
+  }
   &__box{
     width: 785px;
-    padding: 35px 0 0 0;
     @include displayFlex(space-between, flex-start, row)
   }
   &__box-pic{
@@ -34,42 +37,67 @@
     border-radius: 10px;
   }
   &__prd-name{
-
+    width: 400px;
+    @include displayFlex(space-between, flex-start, column)
+  }
+  &__prd-name-text{
+    font-size: 17px;
+    margin: 0;
   }
   &__ptr-art{
-
+    padding: 55px 0 0 0;
   }
   &__ptr-art-prefix{
-
+    font-size: 10px;
+    padding: 0 10px 0 0;
   }
   &__ptr-art-number{
-
+    font-size: 12px;
   }
   &__box-price-count{
-
+    width: 105px;
   }
-  &__box-prd-count{
-
+  &__box-price{
+    text-align: center;
+    vertical-align: middle;
+    height: 21px;
   }
-  &__box-prd-count-button{
-
+  &__price{
+    font-size: 17px;
   }
-  &__prd-count{
-
+  &__count-block{
+    @include displayFlex(center, center, row);
+    padding: 35px 0 0 0;
+    width: 100%;
   }
-  &__prd-count-number{
-
+  &__count-block-button{
+    width: 35px;
+  }
+  &__count-block-count{
+    width: 35px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  &__count-block-number{
+    width: 35px;
   }
   &__box-prd-count-button{
 
   }
   &__box-end-block{
-
+    width: 25px;
   }
   &__box-in-favorites{
 
   }
   &__box-remove{
-
+    padding: 38px 0 0 0;
+  }
+  &__end-block-img{
+    width: 25px;
+  }
+  &__check{
+    width: 280px;
+    @include displayFlex(center, center, column)
   }
 }
