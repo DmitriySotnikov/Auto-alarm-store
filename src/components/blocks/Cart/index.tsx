@@ -50,17 +50,22 @@ export const Cart: FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className="cart__check">
-                    <div className="cart__check-title">
-                        Ваш заказ
+                <div className="cart__right-block">
+                    <div className="cart__check">
+                        <div className="cart__check-title">
+                            Ваш заказ
+                        </div>
+                        <div className="cart__check-count">
+                            <div className="cart__check-count-text">{`Товаров(${1}`})</div>
+                            <div className="cart__check-count-price">23 700 ₽</div>
+                        </div>
+                        <div className="cart__check-value">
+                            <div className="cart__check-value-text">Итого:</div>
+                            <span className="cart__check-sum">{`${"23 700"} ₽`}</span>
+                        </div>
                     </div>
-                    <div className="cart__check-count">
-                        <div className="cart__check-count-text">{`Товаров(${1}`})</div>
-                        <div className="cart__check-count-price">23 700 ₽</div>
-                    </div>
-                    <div className="cart__check-value">
-                        <div className="cart__check-value-text">Итого:</div>
-                        <span className="cart__check-sum">{`${"23 700"} ₽`}</span>
+                    <div className="cart__execution-button">
+                        Оформить заказ
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 @import "utils";
+@import "basicButton";
 
 .cart{
   width: 100%;
@@ -96,6 +97,9 @@
   &__end-block-img{
     width: 25px;
   }
+  &__right-block{
+    @include displayFlex(center, center, column);
+  }
   &__check{
     width: 250px;
     border-radius: 20px;
@@ -133,5 +137,15 @@
   &__check-sum{
     min-width: max-content;
     font-size: 21px;
+  }
+  &__execution-button{
+    margin: 20px 0 0 0;
+    @include displayFlex(center, center, row);
+    @include button(280px, 55px, $text-color, $two-background-color, $dark-violet, 1px, 20px, 19px);
+    cursor: pointer;
+    &:hover{
+      color: $violet;
+      transition: .2s;
+    }
   }
 }
