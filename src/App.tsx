@@ -5,6 +5,7 @@ import {Header} from "./components/blocks/Header";
 import {Catalog} from "./page/catalog";
 import {Breadcrumb} from "./components/simple/Breadcrumb";
 import {Home} from "./page/home";
+import {SliderAuto} from "./components/blocks/CarouselAutoPlay/Slider";
 
 export const App: FC = () => {
   return (

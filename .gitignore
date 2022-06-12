@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 src/assets/icon
+src/assets/slider-image
 
 # testing
 /coverage
