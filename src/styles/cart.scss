@@ -97,7 +97,41 @@
     width: 25px;
   }
   &__check{
-    width: 280px;
-    @include displayFlex(center, center, column)
+    width: 250px;
+    border-radius: 20px;
+    padding: 20px 15px;
+    @include displayFlex(center, center, column);
+    border: $dark-violet solid 1px;
+  }
+  &__check-title{
+    font-size: 17px;
+  }
+  &__check-count{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 15px 0;
+    @include border-violet-1;
+  }
+  &__check-count-text{
+    font-size: 15px;
+  }
+  &__check-count-price{
+    letter-spacing: .09em;
+    font-weight: 600;
+  }
+  &__check-value{
+    @include displayFlex(space-between, center, row);
+    width: 100%;
+    letter-spacing: 0.09em;
+    font-weight: 600;
+    padding: 35px 0 0 0;
+  }
+  &__check-value-text{
+    font-size: 17px;
+  }
+  &__check-sum{
+    min-width: max-content;
+    font-size: 21px;
   }
 }

@@ -97,7 +97,6 @@
     @include button(100px, 35px, $submit-button-text, $submit-button, $button-border, 1px, 35px, 17px);
     &:hover{
       background: $submit-button-hover;
-;
       transition: .2s;
     }
   }
