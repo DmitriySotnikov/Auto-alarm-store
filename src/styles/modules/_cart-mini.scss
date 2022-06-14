@@ -1,0 +1,17 @@
+
+
+.cartBlock{
+  width: 50px;
+  margin: 0 35px 0 0;
+  &-img{
+    padding-left: 19px;
+  }
+  &-count{
+    font-size: 12px;
+    position: relative;
+    top: -15px;
+    padding: 2px 5px;
+    background: $cart-count;
+    border-radius: 10px;
+  }
+}

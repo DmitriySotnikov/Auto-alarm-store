@@ -1,0 +1,45 @@
+
+.categories{
+  &__container{
+    font-family: $font-bold;
+    font-size: 23px;
+    color: $text-color;
+    width: 100%;
+  }
+  @include displayFlex(center, center, column);
+  &__item{
+    margin: 0 0 20px 0;
+    width: 800px;
+    height: 215px;
+    background: $background-submenu;
+    border-radius: 20px;
+    border: $violet solid 1px;
+    @include displayFlex(space-between, center, row)
+  }
+  &__item-block{
+    display: flex;
+    align-items: center;
+  }
+  &__img{
+    width: 180px;
+    height: 170px;
+    border-radius: 7px;
+    padding: 0 15px;
+  }
+  &__title{
+    letter-spacing: 0.2rem;
+    cursor: default;
+  }
+  &__submit-button{
+    text-decoration: none;
+    margin: 0 20px;
+    @include displayFlex(center, center, row);
+    @include button(125px, 40px, $text-color, $two-background-color, $button-border, 1px, 35px, 16px);
+    &:hover{
+      background: $text-color;
+      color: $two-background-color;
+      transition: .2s;
+      border: $violet solid 2px;
+    }
+  }
+}

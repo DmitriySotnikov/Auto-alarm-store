@@ -1,0 +1,101 @@
+
+.product-item{
+  font-family: $font;
+  font-size: 23px;
+  color: $text-color;
+  width: 100%;
+  @include displayFlex(center, center, column);
+  &__container{
+
+  }
+  &__content{
+    padding: 10px 0;
+    margin: 0 0 20px 0;
+    width: 800px;
+    height: 195px;
+    border-radius: 20px;
+    border: $dark-violet solid 2px;
+    @include displayFlex(space-between, center, row)
+  }
+  &__img-block{
+
+  }
+  &__link{
+
+  }
+  &__img{
+    width: 195px;
+    height: 185px;
+    border-radius: 10px;
+    margin: 0 15px;
+  }
+  &__info{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    @include displayFlex(flex-start, flex-start, column)
+  }
+  &__type{
+    font-size: 14px;
+    letter-spacing: 0.11rem;
+    cursor: default;
+  }
+  &__product-name{
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.11rem;
+    padding: 7px 0;
+  }
+  &__stars-line{
+    background: url("../../assets/icon/stars-line.svg") no-repeat;
+    width: 122px;
+    height: 23px;
+    margin: 15px 0 0 0;
+  }
+  &__stars-line--4{
+    background-position-x: calc(0% + 20%);
+  }
+  &__buy{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 2;
+    @include displayFlex(space-around, center, column)
+  }
+  &__price{
+    font-size: 23px;
+  }
+  &__favorite-img{
+    position: relative;
+    &:hover:after{
+      content: "В избранное";
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 10px;
+      width: 100px;
+      position: absolute;
+      top: -23px;
+      left: 40px;
+      padding: 5px;
+      z-index: 100;
+      background: $violet;
+      color: $two-background-color;
+      @include displayFlex(center, center, column);
+    }
+  }
+  &__to-favorite{
+    padding: 0 0 20px 0 ;
+    cursor: pointer;
+  }
+  &__submit-button{
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+    @include displayFlex(center, center, row);
+    @include button(100px, 35px, $submit-button-text, $submit-button, $button-border, 1px, 35px, 17px);
+    &:hover{
+      background: $submit-button-hover;
+      transition: .2s;
+    }
+  }
+}

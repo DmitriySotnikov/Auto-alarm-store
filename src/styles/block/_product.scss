@@ -1,0 +1,174 @@
+.prd{
+  color: $text-color;
+  font-family: $font;
+  padding: 25px 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: $dark-violet solid 2px;
+  }
+  &__title-name{
+    margin: 0;
+  }
+  &__favorite-button{
+    display: flex;
+    align-items: center;
+  }
+  &__favorite-text{
+    padding: 0 10px;
+  }
+  &__favorite-icon{
+    height: 25px;
+  }
+  &__inner{
+    width: 100%;
+    @include displayFlex(space-between, flex-start, row)
+  }
+  &__left-block{
+    @include displayFlex(flex-start, flex-start, column)
+  }
+  &__rating-reviews{
+    font-size: 13px;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+  }
+  &__rating-stars-line{
+    display: inline-block;
+    background: url("../../assets/icon/stars-line.svg") no-repeat;
+    width: 122px;
+    height: 23px;
+    &--4{
+      background-position-x: calc(0% + 20%);
+    }
+  }
+  &__rating-count{
+    padding: 0 15px;
+  }
+  &__reviews-count{
+
+  }
+  &__comment-block{
+    display: flex;
+  }
+  &__comment-icon{
+
+  }
+  &__comment-title{
+    padding: 0 0 0 25px;
+    font-size: 13px;
+    &:after{
+      color: $text-color;
+      content: " \2014";
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      width: 15px;
+      padding: 0 15px;
+    }
+  }
+  &__comment-count{
+
+  }
+  &__picture{
+    width: 420px;
+    padding: 25px 15px 15px 0;
+  }
+  &__picture-img{
+    width: 420px;
+  }
+  &__average-block{
+    width: 300px;
+    @include displayFlex(space-between, flex-start, column)
+  }
+  &__price-wrap{
+    width: 325px;
+    height: 60px;
+    @include border-box($dark-violet, 2px, 20px);
+    @include displayFlex(center, center, row);
+  }
+  &__price{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+  }
+  &__attributes{
+    font-size: 14px;
+    width: 100%;
+    @include displayFlex(center, center, row);
+  }
+  &__list{
+    list-style: none;
+    padding: 15px 5px;
+    margin: 0;
+  }
+  &__list-item{
+    padding: 5px 0;
+  }
+  &__item-value{
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    &:before{
+      color: $text-color;
+      content: " \2013";
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      width: 7px;
+      padding: 0 15px;
+    }
+  }
+  &__detail-link{
+    text-decoration: none;
+    padding: 0 10px;
+    color: $violet;
+    font-size: 14px;
+  }
+  &__sale-block{
+    width: 325px;
+    @include displayFlex(flex-start, center, column)
+  }
+  &__price-wrap{
+    margin: 20px 0;
+  }
+  &__delivery{
+    font-size: 14px;
+    width: calc(100% - 30px);
+    padding: 15px;
+    @include border-box($dark-violet, 2px, 20px);
+  }
+  &__delivery-title{
+
+  }
+  &__delivery-type{
+    padding: 20px 0 5px 0;
+  }
+  &__delivery-row{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__delivery-time{
+
+  }
+  &__delivery-price{
+
+  }
+  &__buy-button{
+    margin: 20px 0 0 0;
+    width: 325px;
+    height: 45px;
+    border-radius: 20px;
+    background: $violet;
+    color: $two-background-color;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    @include displayFlex(center, center, row)
+  }
+}

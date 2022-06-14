@@ -1,0 +1,13 @@
+.headerBottom{
+  width: inherit;
+  height: 100px;
+  background: $layout-background-color;
+  padding: 35px 0 0 0;
+  &_container{
+    display: flex;
+  }
+  &-mainMenu{
+    width: 100%;
+    @include displayFlex(flex-end, flex-end, row);
+  }
+}

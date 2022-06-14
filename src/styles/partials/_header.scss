@@ -1,0 +1,56 @@
+@import "../mixins/basic-mixins";
+
+.header{
+  position: relative;
+  margin: 0;
+  background-color: $two-background-color;
+  font-family: $font-bold;
+  @include text-color;
+  &-top{
+    height: 80px;
+  }
+  &-container{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    @media (max-width: 1201px) {
+      width: 1024px;
+    }
+  }
+  &-inner{
+    @include size;
+    height: 80px;
+    @include displayFlex(space-between, center, row);
+  }
+  &-logo{
+    font-size: 27px;
+    font-family: $font-bold;
+  }
+  &-contact{
+
+  }
+  &-item{
+    display: flex;
+    align-items: center;
+    margin: 5px 0 0 0;
+    &_top{
+      margin: 10px 0 0 0;
+    }
+  }
+  &-contactIcon{
+    width: 17px;
+  }
+  &-contactNumber{
+    margin: 0 0 0 10px;
+  }
+  &-info{
+    padding: 0 35px 0 0;
+  }
+  &-infoIcon{
+    margin: 0 10px 0 0;
+  }
+  &-infoText{
+    font-size: 13px;
+    padding: 0 0 0 3px;
+  }
+}

@@ -1,0 +1,34 @@
+@import "colors.scss";
+@import "variables.scss";
+@import "modules/icon";
+
+@import "./mixins/_basic-mixins";
+@import "./mixins/_basic-button";
+
+@import "../assets/fonts/fonts.scss";
+
+@import "./pages/catalog.scss";
+@import "./pages/home.scss";
+
+@import "./modules/breadcrumbs";
+@import "./modules/cart";
+@import "./modules/cart-mini";
+@import "./modules/catalog-filters";
+@import "./modules/categories";
+@import "./modules/filter-item";
+@import "./modules/filter-range";
+@import "./modules/header-bottom";
+@import "./modules/header-button";
+@import "./modules/icon";
+@import "./modules/navigation-items";
+@import "./modules/product-card-small";
+@import "./modules/product-item";
+@import "./modules/sorter";
+@import "./modules/tags";
+@import "./modules/trigger";
+
+@import "./partials/header";
+@import "./partials/sidebar";
+
+@import "./block/_product.scss";
+@import "./block/_slider.scss";

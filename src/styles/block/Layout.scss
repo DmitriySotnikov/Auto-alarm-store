@@ -1,0 +1,11 @@
+.layout{
+  &__container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    @media (max-width: 1201px) {
+      width: 1024px;
+    }
+  }
+}

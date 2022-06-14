@@ -1,5 +1,5 @@
 import React from 'react';
-import {App} from './App';
+import {App} from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import * as ReactDomClient from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';

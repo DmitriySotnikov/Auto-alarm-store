@@ -1,0 +1,38 @@
+
+.filterRange{
+  margin: 10px 0;
+  width: 100%;
+  &-title{
+    margin: 10px 3px;
+    font-weight: 600;
+    letter-spacing: 0.12rem;
+  }
+  &-content{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item{
+    padding: 0 3px;
+    @include displayFlex(center, center, row-reverse);
+    border: $background-submenu solid 1px;
+    margin: 0 3px;
+    background: $text-color;
+    color: $nav-bottom;
+    font-size: 13px;
+    border-radius: 5px;
+    font-family: $font-bold;
+  }
+  &-input{
+    margin: 0;
+    font-size: 17px;
+    background: $text-color;
+    border: none;
+    outline: none;
+    width: 80%;
+  }
+  &-prefix{
+    padding: 0 5px 0 0;
+  }
+}

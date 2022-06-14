@@ -1,0 +1,35 @@
+.breadcrumbs{
+  &-list{
+    @include displayFlex(flex-start, center, row);
+    list-style-type: none;
+    padding: 0;
+  }
+  &-item{
+    text-decoration: none;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    &_arrow:before{
+      content: "";
+      background: url("../../assets/icon/right-arrow.svg") no-repeat;
+      width: 15px;
+      height: 13px;
+      margin-left: 21px;
+    }
+  }
+  &-home{
+    height: 17px;
+    position: relative;
+    top: 2px;
+  }
+  &-linkHome{
+
+  }
+  &-link{
+    padding-left: 15px;
+    text-decoration: none;
+    font-family: $font;
+    font-size: 14px;
+    color: $text-color;
+  }
+}
