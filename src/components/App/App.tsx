@@ -8,11 +8,9 @@ import {Layout} from "../Layout";
 export const App: FC = () => {
     return (
         <div className="app">
+            <Header />
             <Layout>
-                <Header />
-                <div className="app__content">
-                    <Home/>
-                </div>
+                <Home/>
             </Layout>
         </div>
     );

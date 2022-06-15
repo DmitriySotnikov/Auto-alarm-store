@@ -8,31 +8,31 @@ import {HeaderBottom} from "../HeaderBottom";
 export const Header: FC = () => {
     return (
         <div className='header'>
-            <div className="header-top" >
-                <div className="header-container">
-                    <div className="header-inner">
-                        <div className="header-logo">
+            <div className="header__top">
+                <div  className="header__container">
+                    <div className="header__inner">
+                        <div className="header__logo">
                             <span>MS Angarsk</span>
                         </div>
-                        <div className="header-contact">
-                            <div className="header-item">
-                                <img className="header-contactIcon" src={phone}/>
-                                <span className="header-contactNumber">+7 (3955) 61-58-68</span>
+                        <div className="header__contact">
+                            <div className="header__item">
+                                <img className="header__contact-icon" src={phone}/>
+                                <span className="header__contact-number">+7 (3955) 61-58-68</span>
                             </div>
-                            <div className="header-item">
-                                <img className="header-contactIcon" src={whatsapp}/>
-                                <span className="header-contactNumber">+7 (904) 141-14-14</span>
+                            <div className="header__item">
+                                <img className="header__contact-icon" src={whatsapp}/>
+                                <span className="header__contact-number">+7 (904) 141-14-14</span>
                             </div>
                         </div>
-                        <div className="header-info">
-                            <div className="header-item">
-                                <img className="header-infoIcon" src={location} />
-                                <span className="header-infoText">г. Ангарск, 120-й кв-л, строение 54</span>
+                        <div className="header__info">
+                            <div className="header__item">
+                                <img className="header__info-icon" src={location} />
+                                <span className="header__info-text">г. Ангарск, 120-й кв-л, строение 54</span>
                             </div>
-                            <div className="header-item header-item_top">
-                                <img className="header-infoIcon" src={clock} />
-                                <span className="header-infoText">Пн - Пт :</span>
-                                <span className="header-infoText">9-00 - 19-00</span>
+                            <div className="header__item header__item--top">
+                                <img className="header__info-icon" src={clock} />
+                                <span className="header__info-text">Пн - Пт :</span>
+                                <span className="header__info-text">9-00 - 19-00</span>
                             </div>
                         </div>
                     </div>

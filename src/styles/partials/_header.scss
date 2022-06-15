@@ -6,10 +6,10 @@
   background-color: $two-background-color;
   font-family: $font-bold;
   @include text-color;
-  &-top{
+  &__top{
     height: 80px;
   }
-  &-container{
+  &__container{
     width: 1200px;
     height: 100%;
     margin: 0 auto;
@@ -17,39 +17,39 @@
       width: 1024px;
     }
   }
-  &-inner{
+  &__inner{
     @include size;
     height: 80px;
     @include displayFlex(space-between, center, row);
   }
-  &-logo{
+  &__logo{
     font-size: 27px;
     font-family: $font-bold;
   }
-  &-contact{
+  &__contact{
 
   }
-  &-item{
+  &__item{
     display: flex;
     align-items: center;
     margin: 5px 0 0 0;
-    &_top{
+    &--top{
       margin: 10px 0 0 0;
     }
   }
-  &-contactIcon{
+  &__contact-icon{
     width: 17px;
   }
-  &-contactNumber{
+  &__contact-number{
     margin: 0 0 0 10px;
   }
-  &-info{
+  &__info{
     padding: 0 35px 0 0;
   }
-  &-infoIcon{
+  &__info-icon{
     margin: 0 10px 0 0;
   }
-  &-infoText{
+  &__info-text{
     font-size: 13px;
     padding: 0 0 0 3px;
   }

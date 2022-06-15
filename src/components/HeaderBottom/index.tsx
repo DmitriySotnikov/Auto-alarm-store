@@ -6,10 +6,11 @@ import {Cart} from "../CartMini";
 
 export const HeaderBottom = () => {
     return (
-        <div className="headerBottom">
-            <div className="container headerBottom_container">
-                <CatalogTrigger/>
-                <div className="headerBottom-mainMenu">
+        <div className="header-bottom">
+            <div className="header__container">
+                <div className="header-bottom__inner">
+                    <CatalogTrigger/>
+                <div className="header-bottom__main-menu">
                     {button.map(e => {
                         return <HeaderButton
                             buttonName={e.title}
@@ -18,6 +19,7 @@ export const HeaderBottom = () => {
                         />
                     })}
                     <Cart cartCount={7}/>
+                </div>
                 </div>
             </div>
         </div>
