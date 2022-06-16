@@ -1,10 +1,17 @@
 //color
 
+//background-color
+
+$background-color: rgba(18, 18, 18, 1); // #121212;
+$background-color-light: rgba(41, 41, 41, 1); //#292929;
+
+//font
+
+$font-primary: rgba(228, 228, 228, 1);; //#E4E4E4
+
+// refactoring!!!
 $button-border: #000;
 $button-background-hover: #333;
-$layout-background-color: #121212;
-$two-background-color: #292929;
-$text-color: #e4e4e4; //FFE4E4E4
 $blue: rgba(134, 139, 252, 1); // FF868BFC
 $violet: #BB86FC;
 $violet-hover: #B377FD;

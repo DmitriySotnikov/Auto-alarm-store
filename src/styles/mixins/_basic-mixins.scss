@@ -4,7 +4,7 @@
   margin: 0;
 }
 @mixin text-color{
-  color: $text-color;
+  color: $font-primary;
 }
 @mixin displayFlex($justify, $align, $direction) {
   display: flex;

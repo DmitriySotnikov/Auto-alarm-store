@@ -3,7 +3,7 @@
   &__container{
     font-family: $font-bold;
     font-size: 23px;
-    color: $text-color;
+    color: $font-primary;
     width: 100%;
   }
   @include displayFlex(center, center, column);
@@ -34,10 +34,10 @@
     text-decoration: none;
     margin: 0 20px;
     @include displayFlex(center, center, row);
-    @include button(125px, 40px, $text-color, $two-background-color, $button-border, 1px, 35px, 16px);
+    @include button(125px, 40px, $font-primary, $background-color-light, $button-border, 1px, 35px, 16px);
     &:hover{
-      background: $text-color;
-      color: $two-background-color;
+      background: $font-primary;
+      color: $background-color-light;
       transition: .2s;
       border: $violet solid 2px;
     }

@@ -13,7 +13,7 @@ $widths-slider: 100%;
   font-family: $font;
   &__tab {
     cursor: pointer;
-    border: $layout-background-color solid 2px;
+    border: $background-color solid 2px;
     height: 12px;
     width: 12px;
     margin: 0 10px;
@@ -87,7 +87,7 @@ $widths-slider: 100%;
   &__slide-text {
     width: 100%;
     height: 100%;
-    color: $text-color;
+    color: $font-primary;
     font-size: 50px;
     position: absolute;
     text-align: center;

@@ -1,6 +1,6 @@
 
 .trigger{
-  @include button(210px, 50px, $violet, $layout-background-color, $violet, 2px, 35px, 17px);
+  @include button(210px, 50px, $violet, $background-color, $violet, 2px, 35px, 17px);
   min-width: 210px;
   //font-family: $font-bold;
   display: flex;
@@ -49,11 +49,11 @@
     &_active{
       &:before{
         transform: translateY(5px) rotate(45deg) scaleX(1.4);
-        background: $layout-background-color;
+        background: $background-color;
       }
       &:after{
         transform: translateY(-5px) rotate(-45deg) scaleX(1.4);
-        background: $layout-background-color;
+        background: $background-color;
       }
     }
   }
@@ -70,7 +70,7 @@
   &-text{
     padding: 0 0 0 10px;
     &_active{
-      color: $layout-background-color;
+      color: $background-color;
     }
   }
 }

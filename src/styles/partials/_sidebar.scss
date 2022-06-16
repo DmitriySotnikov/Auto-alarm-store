@@ -10,8 +10,8 @@
   flex-shrink: 0;
   &-content{
     margin: 15px;
-    background: $two-background-color;
-    color: $text-color;
+    background: $background-color-light;
+    color: $font-primary;
     height: calc(100% - 30px);
     border-radius: 20px;
   }

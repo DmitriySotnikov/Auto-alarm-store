@@ -2,7 +2,7 @@
   width: 100%;
   padding: 0 25px;
   font-family: $font;
-  color: $text-color;
+  color: $font-primary;
   &__title{
     @include displayFlex(flex-start, flex-end, row);
     @include border-violet-2;
@@ -138,7 +138,7 @@
   &__execution-button{
     margin: 20px 0 0 0;
     @include displayFlex(center, center, row);
-    @include button(280px, 55px, $text-color, $two-background-color, $dark-violet, 1px, 20px, 19px);
+    @include button(280px, 55px, $font-primary, $background-color-light, $dark-violet, 1px, 20px, 19px);
     cursor: pointer;
     &:hover{
       color: $violet;

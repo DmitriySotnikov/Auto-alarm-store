@@ -18,7 +18,7 @@
     @include displayFlex(center, center, row-reverse);
     border: $background-submenu solid 1px;
     margin: 0 3px;
-    background: $text-color;
+    background: $font-primary;
     color: $nav-bottom;
     font-size: 13px;
     border-radius: 5px;
@@ -27,7 +27,7 @@
   &-input{
     margin: 0;
     font-size: 17px;
-    background: $text-color;
+    background: $font-primary;
     border: none;
     outline: none;
     width: 80%;

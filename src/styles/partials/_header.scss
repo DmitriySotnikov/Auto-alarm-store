@@ -3,7 +3,7 @@
 .header{
   position: relative;
   margin: 0;
-  background-color: $two-background-color;
+  background-color: $background-color-light;
   font-family: $font-bold;
   @include text-color;
   &__top{

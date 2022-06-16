@@ -2,7 +2,7 @@
 .product-item{
   font-family: $font;
   font-size: 23px;
-  color: $text-color;
+  color: $font-primary;
   width: 100%;
   @include displayFlex(center, center, column);
   &__container{
@@ -78,7 +78,7 @@
       padding: 5px;
       z-index: 100;
       background: $violet;
-      color: $two-background-color;
+      color: $background-color-light;
       @include displayFlex(center, center, column);
     }
   }
