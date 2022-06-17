@@ -1,7 +1,7 @@
 .cart{
   width: 100%;
   padding: 0 25px;
-  font-family: $font;
+  font-family: $font-regular;
   color: $font-primary;
   &__title{
     @include displayFlex(flex-start, flex-end, row);

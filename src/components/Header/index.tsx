@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import {HeaderBottom} from "../HeaderBottom";
-import {Icon} from "../Icon";
+import {header} from "../../constants/Header"
 
 export const Header: FC = () => {
     return (
@@ -13,31 +13,31 @@ export const Header: FC = () => {
                         </div>
                         <div className="header__contact">
                             <div className="header__item">
-                                <div className="header__contact-icon">
-                                    <Icon type={"Phone"}/>
+                                <div className="header__icon-block">
+                                    <span className="header__contact-icon"/>
                                 </div>
-                                <span className="header__contact-number">+7 (3955) 61-58-68</span>
+                                <span className="header__contact-number">{header.contactNumber}</span>
                             </div>
                             <div className="header__item">
-                                <div className="header__contact-icon">
-                                    <Icon type={"Whatsapp"}/>
+                                <div className="header__icon-block">
+                                    <span className="header__whatsapp-icon"/>
                                 </div>
-                                <span className="header__contact-number">+7 (904) 141-14-14</span>
+                                <span className="header__contact-number">{header.contactNumberWhatsapp}</span>
                             </div>
                         </div>
                         <div className="header__info">
                             <div className="header__item">
                                 <div className="header__info-icon">
-                                    <Icon type={"Location"}/>
+                                    <span className="header__location-icon"/>
                                 </div>
-                                <span className="header__info-text">г. Ангарск, 120-й кв-л, строение 54</span>
+                                <span className="header__info-text">{header.address}</span>
                             </div>
                             <div className="header__item header__item--top">
                                 <div className="header__info-icon">
-                                    <Icon type={"Clock"}/>
+                                    <span className="header__clock-icon"/>
                                 </div>
-                                <span className="header__info-text">Пн - Пт :</span>
-                                <span className="header__info-text">9-00 - 19-00</span>
+                                <span className="header__info-text">{header.workingDays}</span>
+                                <span className="header__info-text">{header.workingHours}</span>
                             </div>
                         </div>
                     </div>

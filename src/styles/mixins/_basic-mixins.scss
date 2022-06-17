@@ -1,11 +1,3 @@
-@mixin size{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-@mixin text-color{
-  color: $font-primary;
-}
 @mixin displayFlex($justify, $align, $direction) {
   display: flex;
   justify-content: $justify;
@@ -37,4 +29,12 @@
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+@mixin icon($width, $height, $back-image){
+  background-image: url($back-image);
+    width: $width;
+    height: $height;
+    display: inline-block;
+    background-repeat: no-repeat;
 }
