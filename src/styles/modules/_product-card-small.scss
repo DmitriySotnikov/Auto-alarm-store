@@ -1,0 +1,20 @@
+.prd-card-s{
+  // Здесь можно реализовать медиа запросы
+  width: 270px;
+  &__block{
+    height: 400px;
+    display: grid;
+    row-gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr 30px 45px;
+  }
+  &__picture{
+    align-items: center;
+    grid-row: 1;
+  }
+  &__img{
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+}

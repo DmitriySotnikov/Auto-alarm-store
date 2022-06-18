@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
-import comments from "../../../assets/icon/comment.svg"
-import heart from "../../../assets/icon/heart.svg"
-import alarm from "../../../assets/icon/ux4150.jpg"
+import comments from "../../assets/icon/comment.svg"
+import heart from "../../assets/icon/heart.svg"
+import alarm from "../../assets/icon/ux4150.jpg"
 import {Link} from "react-router-dom";
 
 export const Product: FC = () => {

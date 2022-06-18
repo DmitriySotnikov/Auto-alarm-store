@@ -1,12 +1,10 @@
-
-
-.cartBlock{
+.cart-block{
   width: 50px;
   margin: 0 35px 0 0;
-  &-img{
+  &__img{
     padding-left: 19px;
   }
-  &-count{
+  &__count{
     font-size: 12px;
     position: relative;
     top: -15px;

@@ -6,12 +6,12 @@ interface prop {
     cartCount: number
 }
 
-export const Cart: FC<prop> = ({cartCount}) => {
+export const CartMini: FC<prop> = ({cartCount}) => {
     return (
-        <div className="headerButton cartBlock">
-            <Link className="cartBlock-link" to={""}/>
-            <img className='cartBlock-img' src={cart}/>
-            <span className="cartBlock-count">{cartCount}</span>
+        <div className="header-button cart-block">
+            <Link className="cart-block__link" to={""}/>
+            <img className='cart-block__img' src={cart}/>
+            <span className="cart-block__count">{cartCount}</span>
         </div>
     );
 };

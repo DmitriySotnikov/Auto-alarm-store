@@ -2,7 +2,7 @@ import React from 'react';
 import {button} from "../../util/button"
 import {CatalogTrigger} from "../CatalogTrigger";
 import {HeaderButton} from "../HeaderButton";
-import {Cart} from "../CartMini";
+import {CartMini} from "../CartMini";
 
 export const HeaderBottom = () => {
     return (
@@ -18,7 +18,7 @@ export const HeaderBottom = () => {
                             key={e.id}
                         />
                     })}
-                    <Cart cartCount={7}/>
+                    <CartMini cartCount={7}/>
                 </div>
                 </div>
             </div>

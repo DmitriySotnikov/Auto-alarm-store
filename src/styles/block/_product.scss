@@ -139,7 +139,7 @@
   }
   &__delivery{
     font-size: 14px;
-    width: calc(100% - 30px);
+    width: 100%;
     padding: 15px;
     @include border-box($dark-violet, 2px, 20px);
   }
