@@ -2,19 +2,52 @@
   // Здесь можно реализовать медиа запросы
   width: 270px;
   &__block{
+    padding: 15px;
     height: 400px;
     display: grid;
     row-gap: 15px;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 1fr 30px 45px;
+    grid-template-rows: 150px 1fr 23px 30px 45px;
+    border: $blue solid 2px;
+    border-radius: 20px;
+    color: $font-primary;
+    font-family: $font-regular;
   }
   &__picture{
-    align-items: center;
     grid-row: 1;
+    @include displayFlex(center, center, row)
   }
   &__img{
     max-height: 100%;
     max-width: 100%;
+    border-radius: 15px;
+  }
+  &__title{
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 15px;
+    @include displayFlex(center, center, row)
+  }
+  &__title-text{
+
+  }
+  &__rating{
+    grid-column: 1;
+    grid-row: 3;
+  }
+  &__stars-line{
+    background: url("../../assets/icon/stars-line.svg") no-repeat;
+    height: 23px;
+    width: 122px;
+    display: inline-block;
+  }
+  &__stars-line--4{
+    background-position-x: calc(0% + 20%);
+  }
+  &__price{
+    grid-column: 1;
+    grid-row: 4;
+   font-size: 25px;
   }
 
 }

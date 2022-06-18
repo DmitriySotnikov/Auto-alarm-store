@@ -1,0 +1,12 @@
+.button-ui{
+  &__basic{
+    @include displayFlex(center, center, row);
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+    min-width: 100px;
+    min-height: 35px;
+    font-size: 17px;
+    color: inherit;
+    font-family: inherit;
+  }
+}

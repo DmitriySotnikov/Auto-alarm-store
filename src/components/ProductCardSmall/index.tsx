@@ -8,7 +8,18 @@ export const PrdCardSmall: FC = () => {
                 <div className="prd-card-s__picture">
                     <img className="prd-card-s__img" src={alarm}/>
                 </div>
-                <div>
+                <div className="prd-card-s__title">
+                    <span className="prd-card-s__title-text">
+                        Pandora DXL-90 Lora
+                    </span>
+                </div>
+                <div className="prd-card-s__rating">
+                    <span className="prd-card-s__stars-line prd-card-s__stars-line--4"/>
+                </div>
+                <div className="prd-card-s__price">
+                    22 761 ₽
+                </div>
+                <div className="prd-card-s__buy-wrap">
 
                 </div>
             </div>
