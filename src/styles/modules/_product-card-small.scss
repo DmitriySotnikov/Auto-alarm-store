@@ -1,5 +1,6 @@
 .prd-card-s{
   // Здесь можно реализовать медиа запросы
+  margin: 20px 0;
   width: 270px;
   &__block{
     padding: 15px;
@@ -25,11 +26,10 @@
   &__title{
     grid-column: 1;
     grid-row: 2;
-    font-size: 15px;
     @include displayFlex(center, center, row)
   }
   &__title-text{
-
+    font-size: 19px;
   }
   &__rating{
     grid-column: 1;
@@ -47,7 +47,24 @@
   &__price{
     grid-column: 1;
     grid-row: 4;
-   font-size: 25px;
+    font-size: 25px;
   }
-
+  &__buy-wrap{
+    @include displayFlex(space-between, flex-end, row);
+    grid-column: 1;
+    grid-row: 5;
+  }
+  &__buy-button{
+    background: $blue;
+    color: $background-color;
+    font-family: $font-bold;
+    font-size: 19px;
+    border: $black;
+  }
+  &__toFavorite{
+    width: 35px;
+    height: 35px;
+    fill: $blue;
+    cursor: pointer;
+  }
 }

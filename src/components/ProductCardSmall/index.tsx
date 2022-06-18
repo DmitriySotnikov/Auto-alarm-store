@@ -1,7 +1,19 @@
 import React, {FC} from 'react';
 import alarm from "../../assets/icon/ux4150.jpg"
+import {Button} from "../Button";
+import {IconSprite} from "../IconSprite";
+import {header} from "../../constants/Header";
 
 export const PrdCardSmall: FC = () => {
+
+    const Handler = () => {
+        console.log("click")
+    }
+
+    const headerToFavorite = () => {
+        console.log("FAVORITE!")
+    }
+
     return (
         <div className="prd-card-s">
             <div className="prd-card-s__block">
@@ -20,9 +32,13 @@ export const PrdCardSmall: FC = () => {
                     22 761 ₽
                 </div>
                 <div className="prd-card-s__buy-wrap">
-
+                    <Button isDisable={false} onClick={Handler} title={"Купить"} classname={"prd-card-s__buy-button"}/>
+                    <svg className="prd-card-s__toFavorite" onClick={headerToFavorite}>
+                        <use xlinkHref="#Heart"/>
+                    </svg>
                 </div>
             </div>
+            <IconSprite/>
         </div>
     );
 };
