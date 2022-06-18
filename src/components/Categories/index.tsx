@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import alarm from "../../../assets/icon/ux4150.jpg"
+import alarm from "../../assets/icon/ux4150.jpg"
 import {Link} from "react-router-dom";
 
 export const Categories: FC = () => {
@@ -10,7 +10,7 @@ export const Categories: FC = () => {
                     <img className="categories__img" src={alarm}/>
                 <span className="categories__title">Автосигнализации</span>
                 </div>
-                <Link to={" "} className="categories__submit-button">Подробнее</Link>
+                <Link to={""} className="categories__submit-button">Подробнее</Link>
             </div>
         </div>
     );

@@ -1,7 +1,11 @@
 .prd-card-s{
   // Здесь можно реализовать медиа запросы
-  margin: 20px 0;
+  margin: 20px 7px;
   width: 270px;
+  &__container{
+    @include displayFlex(center, center, row);
+    flex-wrap: wrap;
+  }
   &__block{
     padding: 15px;
     height: 400px;
@@ -36,7 +40,7 @@
     grid-row: 3;
   }
   &__stars-line{
-    background: url("../../assets/icon/stars-line.svg") no-repeat;
+    background: url($to-favorite) no-repeat;
     height: 23px;
     width: 122px;
     display: inline-block;
@@ -60,6 +64,7 @@
     font-family: $font-bold;
     font-size: 19px;
     border: $black;
+    width: 145px;
   }
   &__toFavorite{
     width: 35px;
