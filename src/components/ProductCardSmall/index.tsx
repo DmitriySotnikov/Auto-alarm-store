@@ -20,7 +20,7 @@ export const PrdCardSmall: FC = () => {
             {
                 products.map( el => {
                     return (
-                        <div className="prd-card-s">
+                        <div className="prd-card-s" key={el.id}>
                         <div className="prd-card-s__block">
                             <div className="prd-card-s__picture">
                                 <img className="prd-card-s__img" src={alarm}/>

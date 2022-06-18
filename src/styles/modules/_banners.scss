@@ -1,0 +1,21 @@
+.banners{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &__item{
+    padding: 15px;
+    width: calc(100% / 2);
+    height: 300px;
+    border: $blue solid 1px;
+    border-radius: 20px;
+    &--separator{
+      margin-left: 10px;
+    }
+  }
+  &__title{
+    font-size: 35px;
+    color: $font-primary;
+    font-family: $font-bold;
+    letter-spacing: .1em;
+  }
+}
