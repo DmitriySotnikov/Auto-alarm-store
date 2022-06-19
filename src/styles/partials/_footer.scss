@@ -6,4 +6,51 @@
   font-size: 14px;
   margin-top: 35px;
   background: $background-color-light;
+  &__container{
+    padding: 20px;
+    @media (min-width: 1201px) {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  &__menu{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 300px 300px 1fr;
+    grid-template-rows: 1fr;
+  }
+  &__contacts{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  &__title{
+    padding: 0 0 35px 0;
+  }
+  &__contact-item{
+    padding: 0 0 20px 0;
+    @include displayFlex(flex-start, center, row);
+  }
+  &__contact-info{
+    padding: 0 0 0 15px;
+  }
+  &__email-icon{
+    @include icon(20px, 20px, $email);
+  }
+  &__location-icon{
+    @include icon(20px, 20px, $location);
+  }
+  &__phone-icon{
+    @include icon(20px, 20px, $phone);
+  }
+  &__clock-icon{
+    @include icon(20px, 20px, $clock);
+  }
+  &__info-block{
+    grid-column: 2;
+    grid-row: 1;
+  }
+  &__vk-icon{
+    @include icon(40px, 40px, $vk);
+  }
+
 }
