@@ -13,15 +13,16 @@
       margin: 0 auto;
     }
   }
-  &__menu{
+  &__inner{
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 300px 300px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
   &__contacts{
     grid-column: 1;
     grid-row: 1;
+    padding: 0 7px;
   }
   &__title{
     padding: 0 0 35px 0;
@@ -32,6 +33,11 @@
   }
   &__contact-info{
     padding: 0 0 0 15px;
+  }
+  &__info-block{
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0 7px;
   }
   &__email-icon{
     @include icon(20px, 20px, $email);
@@ -48,9 +54,46 @@
   &__info-block{
     grid-column: 2;
     grid-row: 1;
+    padding: 0 7px;
+  }
+  &--indent{
+    margin-right: 20px;
   }
   &__vk-icon{
     @include icon(40px, 40px, $vk);
   }
-
+  &__whatsapp-icon{
+    @include icon(40px, 40px, $whatsapp);
+  }
+  &__telegram-icon{
+    @include icon(40px, 40px, $telegram);
+  }
+  &__img-list{
+    @include displayFlex(flex-start, center, row);
+    padding: 0 0 70px 0;
+  }
+  &__mastercard-icon{
+    width: 55px;
+    height: 55px;
+  }
+  &__mir-icon{
+    fill: $font-primary;
+    width: 65px;
+    height: 20px;
+  }
+  &__visa-icon{
+    width: 45px;
+    height: 45px;
+  }
+  &__menu{
+    grid-column: 3;
+    grid-row: 1;
+    padding: 0 7px;
+  }
+  &__menu-list-item{
+    padding: 15px 0 0 0;
+  }
+  &__menu-list-link{
+    color: $font-primary;
+  }
 }
