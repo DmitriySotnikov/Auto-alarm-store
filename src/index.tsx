@@ -3,16 +3,20 @@ import {App} from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import * as ReactDomClient from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { store } from './store/store'
+import { Provider } from 'react-redux'
 
 const root = ReactDomClient.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
     <React.StrictMode>
-        <BrowserRouter>
-            <Routes  >
-                <Route path='*' element={<App/>} />
-            </Routes >
-        </BrowserRouter>
+        <Provider store={store}>
+            <BrowserRouter>
+                <Routes  >
+                    <Route path='*' element={<App/>} />
+                </Routes >
+            </BrowserRouter>
+        </Provider>
     </React.StrictMode>
 );
 
@@ -21,4 +25,3 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 
 reportWebVitals();
-
