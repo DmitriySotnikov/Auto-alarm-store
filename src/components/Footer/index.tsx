@@ -45,6 +45,7 @@ export const Footer: FC = () => {
                             <span className="footer__whatsapp-icon footer--indent"/>
                             <span className="footer__telegram-icon"/>
                         </div>
+                        <span className="footer__separator"/>
                         <div className="footer__title">
                             Принимаем к оплате:
                         </div>
@@ -80,6 +81,12 @@ export const Footer: FC = () => {
                             </Link>
                         </div>
                     </div>
+                </div>
+                <div className="footer__copyright">
+                    <span className="footer__copyright-line"/>
+                </div>
+                <div className="footer__copyright-info">
+                    © 2022-2022 Ms-avto-alarm. Все права зашищены.
                 </div>
             </div>
             <IconSprite/>

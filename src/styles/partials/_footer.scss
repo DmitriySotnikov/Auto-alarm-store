@@ -26,6 +26,8 @@
   }
   &__title{
     padding: 0 0 35px 0;
+    font-family: $font-semi-bold;
+    font-size: 15px;
   }
   &__contact-item{
     padding: 0 0 20px 0;
@@ -51,11 +53,6 @@
   &__clock-icon{
     @include icon(20px, 20px, $clock);
   }
-  &__info-block{
-    grid-column: 2;
-    grid-row: 1;
-    padding: 0 7px;
-  }
   &--indent{
     margin-right: 20px;
   }
@@ -68,9 +65,13 @@
   &__telegram-icon{
     @include icon(40px, 40px, $telegram);
   }
+  &__separator{
+    height: 50px;
+    width: 100%;
+    display: inline-block;
+  }
   &__img-list{
     @include displayFlex(flex-start, center, row);
-    padding: 0 0 70px 0;
   }
   &__mastercard-icon{
     width: 55px;
@@ -88,12 +89,27 @@
   &__menu{
     grid-column: 3;
     grid-row: 1;
-    padding: 0 7px;
+    padding: 0 0 0 50px;
   }
   &__menu-list-item{
     padding: 15px 0 0 0;
   }
   &__menu-list-link{
     color: $font-primary;
+  }
+  &__copyright{
+    margin: 20px 0 0 0;
+    height: 40px;
+    display: grid;
+    row-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1px 1fr;
+  }
+  &__copyright-line{
+    grid-row: 1;
+    background: $separator-border;
+  }
+  &__copyright-info{
+
   }
 }

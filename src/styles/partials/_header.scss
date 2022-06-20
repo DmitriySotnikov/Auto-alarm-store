@@ -3,7 +3,7 @@
   position: relative;
   margin: 0;
   background-color: $background-color-light;
-  font-family: $font-bold;
+  font-family: $font-semi-bold;
   &__top{
     height: 80px;
   }
@@ -22,7 +22,7 @@
   }
   &__logo{
     font-size: 27px;
-    font-family: $font-bold;
+    font-family: $font-semi-bold;
   }
   &__contact{
   }
