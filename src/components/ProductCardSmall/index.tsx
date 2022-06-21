@@ -4,15 +4,11 @@ import {Button} from "../Button";
 import {IconSprite} from "../IconSprite";
 //import {products} from "../../util/catalog_mock_data";
 import {useAppDispatch, useAppSelector} from "../../hooks/redux";
-import {useSelector} from "react-redux";
-import {RootState} from "../../store/store";
 
 
 export const PrdCardSmall: FC = () => {
 
     const {products} = useAppSelector(state => state.product)
-
-    const {} = useSelector((state: RootState) => state)
 
     const {} = useAppDispatch()
 
