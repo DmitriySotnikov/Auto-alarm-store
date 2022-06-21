@@ -2,15 +2,15 @@ import React, {FC} from 'react';
 import alarm from "../../assets/icon/ux4150.jpg"
 import {Button} from "../Button";
 import {IconSprite} from "../IconSprite";
-//import {products} from "../../util/catalog_mock_data";
-import {useAppDispatch, useAppSelector} from "../../hooks/redux";
+import {products} from "../../util/catalog_mock_data";
+import {productApi} from "../../service/ProductService";
 
 
 export const PrdCardSmall: FC = () => {
 
-    const {products} = useAppSelector(state => state.product)
+    //const {products} = useAppSelector(state => state.product)
 
-    const {} = useAppDispatch()
+    const {error, isLoading, data} = productApi.useGetAllProductsQuery(5)
 
     const Handler = () => {
         console.log("click")
@@ -21,6 +21,7 @@ export const PrdCardSmall: FC = () => {
     }
 
     return (
+
         <div className="prd-card-s__container">
             {
                 products.map( el => {

@@ -19,6 +19,7 @@ export const productSlice = createSlice({
         initialState,
         reducers: {},
     extraReducers: {
+        // successful upload
 
     }
     }
