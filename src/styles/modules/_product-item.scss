@@ -92,7 +92,7 @@
     font-weight: 600;
     letter-spacing: 0.04rem;
     @include displayFlex(center, center, row);
-    @include button(100px, 35px, $submit-button-text, $submit-button, $black, 1px, 35px, 17px);
+    @include button(35px, $submit-button-text, $submit-button, $black, 1px, 35px, 17px);
     &:hover{
       background: $submit-button-hover;
       transition: .2s;

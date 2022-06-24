@@ -11,7 +11,7 @@
       transition: .2s;
     }
   &__item{
-    @include button(max-content, 27px, $font-primary, $tag-button, $tag-button, 1px, 20px, 14px);
+    @include button(27px, $font-primary, $tag-button, $tag-button, 1px, 20px, 14px);
 
     @include displayFlex(center, center, row);
     padding: 1px 5px;

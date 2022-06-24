@@ -1,7 +1,7 @@
 export const button = [
     {
         id: 0,
-        title: "Записаться",
+        title: "Наши работы",
         element: './',
     },
     {

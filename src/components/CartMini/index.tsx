@@ -8,7 +8,7 @@ interface prop {
 
 export const CartMini: FC<prop> = ({cartCount}) => {
     return (
-        <div className="header-button cart-block">
+        <div className="header-button header-button--cart-block">
             <Link className="cart-block__link" to={""}/>
             <img className='cart-block__img' src={cart}/>
             <span className="cart-block__count">{cartCount}</span>

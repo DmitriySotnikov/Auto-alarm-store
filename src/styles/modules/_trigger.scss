@@ -1,6 +1,6 @@
 
 .trigger{
-  @include button(210px, 50px, $violet, $background-color, $violet, 2px, 35px, 17px);
+  @include button(50px, $violet, $background-color, $violet, 2px, 35px, 17px);
   min-width: 210px;
   //font-family: $font-bold;
   display: flex;

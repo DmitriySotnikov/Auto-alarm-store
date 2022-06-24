@@ -138,7 +138,7 @@
   &__execution-button{
     margin: 20px 0 0 0;
     @include displayFlex(center, center, row);
-    @include button(280px, 55px, $font-primary, $background-color-light, $dark-violet, 1px, 20px, 19px);
+    @include button(55px, $font-primary, $background-color-light, $dark-violet, 1px, 20px, 19px);
     cursor: pointer;
     &:hover{
       color: $violet;
