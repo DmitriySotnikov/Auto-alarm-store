@@ -12,6 +12,7 @@ export const PrdCardSmall: FC = () => {
 
     const {error, isLoading, data} = productApi.useGetAllProductsQuery(5)
 
+
     const Handler = () => {
         console.log("click")
     }
