@@ -1,45 +1,51 @@
 import {Auth} from "../components/Auth";
 import {Cart} from "../components/Cart";
 import {Catalog} from "../pages/CatalogPage";
+import {Home} from "../pages/HomePage";
 import {Service} from "../components/Service";
 import {Works} from "../components/Work";
 
 export const Routes = {
-    AUTH: "Auth",
-    CATALOG: "/catalog",
-    CART: "/cart",
-    HOME: "/home",
+    AUTH: "auth",
+    CATALOG: "catalog",
+    CART: "cart",
+    HOME: "home",
     LOGIN: "login",
     SERVICE: "services",
     WORKS: "works",
 }
 
+
 export const authRoutes = [
     {
         path: Routes.CART,
-        Component: Cart,
+        Element: Cart,
     },
 ]
 
 export const publicRoutes = [
     {
+        path: Routes.HOME,
+        Element: Home,
+    },
+    {
         path: Routes.CATALOG,
-        Component: Catalog,
+        Element: Catalog,
     },
     {
         path: Routes.LOGIN,
-        Component: Auth,
+        Element: Auth,
     },
     {
         path: Routes.AUTH,
-        Component: Auth,
+        Element: Auth,
     },
     {
         path: Routes.SERVICE,
-        Component: Service,
+        Element: Service,
     },
     {
         path: Routes.WORKS,
-        Component: Works,
+        Element: Works,
     },
 ]

@@ -4,7 +4,7 @@ interface props {
     children: React.ReactNode
 }
 
-export const Layout: FC<props> = ({children}) => {
+export const Main: FC<props> = ({children}) => {
     return (
         <div className="layout">
             <div className="layout__container">

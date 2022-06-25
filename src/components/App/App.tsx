@@ -1,19 +1,18 @@
 import React, {FC} from 'react';
-import { Header } from "../Header";
-import { Home } from "../../pages/HomePage";
-
 import "../../styles/_index.scss"
-import {Layout} from "../Layout";
+import {Main} from "../Main";
+import {Header} from "../Header";
 import {Footer} from "../Footer";
+import {Outlet} from "react-router-dom";
 
 export const App: FC = () => {
     return (
         <div className="app">
             <Header />
-            <Layout>
-                <Home/>
-            </Layout>
-            <Footer/>
+            <Main>
+                <Outlet />
+            </Main>
+            <Footer />
         </div>
     );
 }

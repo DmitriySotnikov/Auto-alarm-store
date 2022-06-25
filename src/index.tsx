@@ -1,10 +1,10 @@
 import React from 'react';
-import {App} from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import * as ReactDomClient from 'react-dom/client';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { store } from './store/store'
-import { Provider } from 'react-redux'
+import {BrowserRouter} from 'react-router-dom';
+import {store} from './store/store'
+import {Provider} from 'react-redux'
+import {AppRouter} from "./components/AppRouter";
 
 const root = ReactDomClient.createRoot(document.getElementById('root') as HTMLElement);
 
@@ -12,9 +12,7 @@ root.render(
     <React.StrictMode>
         <Provider store={store}>
             <BrowserRouter>
-                <Routes  >
-                    <Route path='*' element={<App/>} />
-                </Routes >
+                <AppRouter/>
             </BrowserRouter>
         </Provider>
     </React.StrictMode>

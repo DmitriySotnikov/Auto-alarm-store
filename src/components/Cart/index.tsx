@@ -1,9 +1,9 @@
 import React, {FC} from 'react';
-import alarm from "../../../assets/icon/ux4150.jpg"
-import trashCan from "../../../assets/icon/trash-can.svg"
-import heart from "../../../assets/icon/heart-grey.svg"
-import plus from "../../../assets/icon/plus.svg"
-import minus from "../../../assets/icon/minus.svg"
+import alarm from "../../assets/icon/ux4150.jpg"
+import trashCan from "../../assets/icon/trash-can.svg"
+import heart from "../../assets/icon/heart-grey.svg"
+import plus from "../../assets/icon/plus.svg"
+import minus from "../../assets/icon/minus.svg"
 
 export const Cart: FC = () => {
     return (
