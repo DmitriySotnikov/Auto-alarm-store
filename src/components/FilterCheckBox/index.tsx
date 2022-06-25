@@ -13,14 +13,14 @@ export const CheckBoxField: FC = () => {
         <div>
             {filterItems.map(el => {
                     return (
-                        <div className="filterItem">
+                        <div className="filterItem" key={el.id}>
                             <hr className="filterItem-separator"/>
                             <span className="filterItem-title">{el.title}</span>
                             <div className="filterItem-checkboxList">
                                 {
                                     el.checkbox.map( i => {
                                         return (
-                                            <label className="filterItem-label">
+                                            <label className="filterItem-label" key={i.id}>
                                                 <input className="filterItem-input"
                                                        type="checkbox"
                                                        onChange={handler}

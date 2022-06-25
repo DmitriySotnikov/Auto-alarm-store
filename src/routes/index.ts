@@ -4,10 +4,12 @@ import {Catalog} from "../pages/CatalogPage";
 import {Home} from "../pages/HomePage";
 import {Service} from "../components/Service";
 import {Works} from "../components/Work";
+import {ProductPage} from "../pages/ProductPage";
 
 export const Routes = {
     AUTH: "auth",
     CATALOG: "catalog",
+    ALARM: "catalog/:categories",  // Тут можно добавлять параметры.
     CART: "cart",
     HOME: "home",
     LOGIN: "login",
@@ -24,6 +26,10 @@ export const authRoutes = [
 ]
 
 export const publicRoutes = [
+    {
+        path: Routes.ALARM,
+        Element: ProductPage,
+    },
     {
         path: Routes.HOME,
         Element: Home,

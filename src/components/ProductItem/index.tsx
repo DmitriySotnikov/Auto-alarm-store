@@ -5,14 +5,15 @@ import {products} from "../../util/catalog_mock_data"
 import img from "../../assets/icon/ux4150.jpg"
 
 export const ProductItem: FC = () => {
+
     return (
         <div className="product-item__container">
             { products.map( el => {
                     return (
-                        <div className="product-item">
+                        <div className="product-item" key={el.id}>
                             <div className="product-item__content">
                                 <div className="product-item__img-block">
-                                    <Link className="product-item__link" to={"#"}>
+                                    <Link className="product-item__link" to={`${el.id}`}>
                                         <img className="product-item__img" src={img} alt={""}/>
                                     </Link>
                                 </div>

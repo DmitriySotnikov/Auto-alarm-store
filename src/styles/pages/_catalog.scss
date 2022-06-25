@@ -1,8 +1,8 @@
 .catalog{
-  &-title{
+  &__title{
     padding: 15px 0 0 0;
   }
-  &-titleText{
+  &__title-text{
     font-size: 27px;
     font-family: $font-regular;
     color: $font-primary;
@@ -11,14 +11,14 @@
     margin-block-end: 0;
     font-weight: inherit;
   }
-  &-content{
+  &__content{
     background: $background-color-light;
     padding: 15px;
     border-radius: 20px;
     margin: 20px 35px 0 0;
     display: flex;
   }
-  &-right{
+  &__right{
     // Контейнер с медиа запросами
     margin: 15px;
     width: 100%;

@@ -32,12 +32,12 @@ export const filterItems = [
         title: "Автозапуск",
         checkbox: [
             {
-                id: 0,
+                id: 3,
                 name: "есть",
                 count: 7
             },
             {
-                id: 1,
+                id: 4,
                 name: "нет",
                 count: 0
             }
@@ -48,51 +48,49 @@ export const filterItems = [
         title: "Управление",
         checkbox: [
             {
-                id: 0,
+                id: 5,
                 name: "брелок автосигнализации",
                 count: 10
             },
             {
-                id: 1,
+                id: 6,
                 name: "GSM",
                 count: 3
             },
             {
-                id: 2,
+                id: 7,
                 name: "карта-метка",
                 count: 5
             },
             {
-                id: 3,
+                id: 8,
                 name: "штатный брелок автомобиля",
                 count: 9
             }
         ]
     },
     {
-        id: 0,
+        id: 2,
         title: "GPS (координаты)",
         checkbox: [
             {
-                id: 0,
+                id: 9,
                 name: "есть",
                 count: 7
             },
             {
-                id: 1,
+                id: 10,
                 name: "нет",
                 count: 1
             },
             {
-                id: 1,
+                id: 11,
                 name: "можно подключить отдельно",
                 count: 10
             }
         ]
     },
 ]
-
-//import img from "../../assets/icon/dx90lora.jpg" Пример импорта картинки
 
 export const products = [
     {
