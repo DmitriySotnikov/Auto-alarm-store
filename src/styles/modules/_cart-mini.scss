@@ -1,6 +1,9 @@
 .cart-block{
-  &__img{
+  &__link{
     padding-left: 19px;
+  }
+  &__icon{
+    @include icon(30px, 30px, $cart);
   }
   &__count{
     font-size: 12px;

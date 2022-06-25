@@ -137,6 +137,7 @@
   }
   &__execution-button{
     margin: 20px 0 0 0;
+    padding: 0 15px;
     @include displayFlex(center, center, row);
     @include button(55px, $font-primary, $background-color-light, $dark-violet, 1px, 20px, 19px);
     cursor: pointer;
