@@ -24,6 +24,10 @@
     font-size: 27px;
     font-family: $font-semi-bold;
   }
+  &__to-home{
+    color: $font-primary;
+    cursor: pointer;
+  }
   &__contact{
   }
   &__item{

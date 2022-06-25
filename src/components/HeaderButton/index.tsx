@@ -1,5 +1,5 @@
 import React, {FC, ReactNode} from "react";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 interface prop {
     buttonName: ReactNode
@@ -10,7 +10,9 @@ export const HeaderButton: FC<prop> = (
     {buttonName, link}) => {
     return (
         <div className="header-button">
-            <Link className="header-button__link" to={link} >{buttonName}</Link>
+            <NavLink className={({isActive}) => {
+                return "header-button__link"
+            }}  to={link} >{buttonName}</NavLink>
         </div>
     );
 };

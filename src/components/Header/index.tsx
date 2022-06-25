@@ -1,6 +1,8 @@
 import React, {FC} from 'react';
 import {HeaderBottom} from "../HeaderBottom";
 import {header} from "../../constants/Header"
+import {NavLink} from "react-router-dom";
+import {Routes} from "../../routes";
 
 export const Header: FC = () => {
     return (
@@ -9,7 +11,9 @@ export const Header: FC = () => {
                 <div  className="header__container">
                     <div className="header__inner">
                         <div className="header__logo">
-                            <span>MS Angarsk</span>
+                            <NavLink className={() => "header__to-home"} to={Routes.HOME}>
+                                <span>MS Angarsk</span>
+                            </NavLink>
                         </div>
                         <div className="header__contact">
                             <div className="header__item">

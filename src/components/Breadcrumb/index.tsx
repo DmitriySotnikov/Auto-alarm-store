@@ -1,23 +1,22 @@
 import React, {FC} from 'react';
 import {Link} from "react-router-dom";
-import home from "../../../assets/icon/home.svg"
 
 export const Breadcrumb: FC = () => {
     return (
         <div className="breadcrumbs">
-            <ul className="breadcrumbs-list">
-                <li className="breadcrumbs-item">
-                    <Link className="breadcrumbs-linkHome" to={"#"} title="Главная">
-                        <img className="breadcrumbs-home" src={home} alt={""}/>
+            <ul className="breadcrumbs__list">
+                <li className="breadcrumbs__item">
+                    <Link className="breadcrumbs__link-home" to={"#"} title="Главная">
+                        <span className="breadcrumbs__home"/>
                     </Link>
                 </li>
-                <li className="breadcrumbs-item breadcrumbs-item_arrow">
-                    <Link className="breadcrumbs-link" to={"#"} title="Главная">
+                <li className="breadcrumbs__item breadcrumbs__item-arrow">
+                    <Link className="breadcrumbs__link" to={"#"} title="Главная">
                         Каталог
                     </Link>
                 </li>
-                <li className="breadcrumbs-item breadcrumbs-item_arrow">
-                    <Link className="breadcrumbs-link" to={"#"} title="Автосигнализации">
+                <li className="breadcrumbs__item breadcrumbs__item-arrow">
+                    <Link className="breadcrumbs__link" to={"#"} title="Автосигнализации">
                         Автосигнализации
                     </Link>
                 </li>
