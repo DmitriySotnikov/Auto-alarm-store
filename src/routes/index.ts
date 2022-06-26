@@ -9,7 +9,7 @@ import {ProductPage} from "../pages/ProductPage";
 export const Routes = {
     AUTH: "auth",
     CATALOG: "catalog",
-    ALARM: "catalog/:categories",  // Тут можно добавлять параметры.
+    CATEGORIES: "catalog/:categories",  // Тут можно добавлять параметры.
     CART: "cart",
     HOME: "home",
     LOGIN: "login",
@@ -27,7 +27,7 @@ export const authRoutes = [
 
 export const publicRoutes = [
     {
-        path: Routes.ALARM,
+        path: Routes.CATEGORIES,
         Element: ProductPage,
     },
     {

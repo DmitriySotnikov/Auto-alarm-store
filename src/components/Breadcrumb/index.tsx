@@ -11,7 +11,7 @@ export const Breadcrumb: FC = () => {
                     </Link>
                 </li>
                 <li className="breadcrumbs__item breadcrumbs__item-arrow">
-                    <Link className="breadcrumbs__link" to={"#"} title="Главная">
+                    <Link className="breadcrumbs__link" to={"catalog"} title="Каталог">
                         Каталог
                     </Link>
                 </li>

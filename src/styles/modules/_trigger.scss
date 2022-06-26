@@ -1,8 +1,7 @@
 
 .trigger{
-  @include button(50px, $violet, $background-color, $violet, 2px, 35px, 17px);
-  min-width: 210px;
-  //font-family: $font-bold;
+  @include button(50px, $blue, $background-color, $blue, 2px, 35px, 17px);
+  min-width: 142px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -12,13 +11,13 @@
   &:hover{
     background: $trigger-hover;
   }
-  &_active{
-    background-color: $violet;
+  &--active{
+    background-color: $blue;
     &:hover{
-      background-color: $violet-hover;
+      background-color: $blue;
     }
   }
-  &-icon{
+  &__icon{
     height: 12px;
     width: 14px;
     transition: 1s;
@@ -31,7 +30,7 @@
       left: 0;
       right: 0;
       height: 2px;
-      background: $violet;
+      background: $blue;
       box-sizing: border-box;
       position: absolute;
       transition: .3s;
@@ -41,12 +40,12 @@
       bottom: 0;
       height: 2px;
       width: inherit;
-      background: $violet;
+      background: $blue;
       box-sizing: border-box;
       position: absolute;
       transition: .3s;
     }
-    &_active{
+    &--active{
       &:before{
         transform: translateY(5px) rotate(45deg) scaleX(1.4);
         background: $background-color;
@@ -57,19 +56,19 @@
       }
     }
   }
-  &-iconLine{
+  &__icon-line{
     top: 5px;
     width: inherit;
     height: 2px;
-    background: $violet;
+    background: $blue;
     position: absolute;
-    &_active{
+    &--active{
       display: none;
     }
   }
-  &-text{
+  &__text{
     padding: 0 0 0 10px;
-    &_active{
+    &--active{
       color: $background-color;
     }
   }

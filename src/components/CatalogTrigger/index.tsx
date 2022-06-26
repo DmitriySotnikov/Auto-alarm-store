@@ -1,16 +1,23 @@
-import React, {FC, useState} from 'react';
+import React, {FC} from 'react';
+import {useAppSelector} from "../../hooks/redux";
+import {triggerIsActive} from '../../store/reducer/UISlice';
+import {useDispatch} from "react-redux";
 
 export const CatalogTrigger: FC = () => {
-    const [active, setActive] = useState(false)
+
+    const {trigger} = useAppSelector(state => state.ui)
+
+    const dispatch = useDispatch()
+
     return (
-        <div className={active ? "trigger trigger_active" : "trigger"} onClick={() => setActive(!active)} >
-            <div className={active ? "trigger-icon trigger-icon_active" : "trigger-icon"}>
-                <div className={active ? "trigger-iconLine trigger-iconLine_active" :
-                "trigger-iconLine"}/>
+        <div className={trigger ? "trigger trigger--active" : "trigger"} onClick={() => dispatch(triggerIsActive(!trigger))} >
+            <div className={trigger ? "trigger__icon trigger__icon--active" : "trigger__icon"}>
+                <div className={trigger ? "trigger__icon-line trigger-icon-line--active" :
+                "trigger__icon-line"}/>
             </div>
-            <div className={active ? "trigger-text trigger-text_active" :
-                "trigger-text"}>
-                Каталог товаров
+            <div className={trigger ? "trigger__text trigger__text--active" :
+                "trigger__text"}>
+                Каталог
             </div>
         </div>
     );

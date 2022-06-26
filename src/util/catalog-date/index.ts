@@ -1,28 +1,43 @@
 export const catalogLink = [
     {
-        id: 1,
+        id: 0,
         textLink: "Автосигнализации",
-        link: "alarms"
+        link: "catalog"
+    },
+    {
+        id: 1,
+        textLink: "Иммобилайзеры",
+        link: "catalog"
     },
     {
         id: 2,
-        textLink: "Автозвук",
-        link: "avtozvik"
+        textLink: "Автоакустика",
+        link: "catalog"
     },
     {
         id: 3,
         textLink: "Механические запиратели",
-        link: "zapirately"
+        link: "catalog"
     },
     {
         id: 4,
         textLink: "Предпусковые подогреватели",
-        link: "pjd"
+        link: "catalog"
     },
     {
         id: 5,
         textLink: "Шумоузоляция",
-        link: "shimka"
+        link: "catalog"
+    },
+    {
+        id: 6,
+        textLink: "Диагностика",
+        link: "catalog"
+    },
+    {
+        id: 7,
+        textLink: "Ремонт электрики",
+        link: "catalog"
     },
 ]
 

@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import heart from "../../assets/icon/heart.svg"
 import {Link} from "react-router-dom";
-import {products} from "../../util/catalog_mock_data"
+import {products} from "../../util/catalog-date"
 import img from "../../assets/icon/ux4150.jpg"
 
 export const ProductItem: FC = () => {

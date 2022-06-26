@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import alarm from "../../assets/icon/ux4150.jpg"
 import {Button} from "../Button";
 import {IconSprite} from "../IconSprite";
-import {products} from "../../util/catalog_mock_data";
+import {products} from "../../util/catalog-date";
 import {productApi} from "../../service/ProductService";
 
 

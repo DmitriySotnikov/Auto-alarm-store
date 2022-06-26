@@ -1,5 +1,5 @@
 import React, {ChangeEvent, FC, useState} from 'react';
-import {filterItems} from "../../util/catalog_mock_data"
+import {filterItems} from "../../util/catalog-date"
 
 export const CheckBoxField: FC = () => {
 

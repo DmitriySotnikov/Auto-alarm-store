@@ -11,13 +11,14 @@ $font-primary: rgba(228, 228, 228, 1);; //#E4E4E4
 
 // Borders
 
-$blue: rgba(134, 139, 252, 1); // #F868BFC
+$blue: rgba(134, 139, 252, 1); // #868BFC rgb(134, 139, 252);
+$blue-border: rgba(134, 139, 252, .3);
 $black: rgba(0, 0, 0, 1); // #000000
 
 // refactoring!!!
 $button-background-hover: #333;
 $violet: #BB86FC;
-$violet-hover: #B377FD;
+$violet-hover: #b377fd;
 $trigger-hover: #1D1D1D;
 $background-submenu: #1E1E1E;
 $nav-bottom: #585858;
