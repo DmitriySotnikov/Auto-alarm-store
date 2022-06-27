@@ -1,32 +1,32 @@
-
-.filterItem{
+.filter-item{
   width: 100%;
   position: relative;
   @include displayFlex(flex-start, flex-start, column);
   font-weight: 500;
-  &-separator{
+  font-family: $font-regular;
+  &__separator{
     margin: 30px 0 15px 0;
     border-color: $separator-border;
     width: 100%;
   }
-  &-checkboxList{
+  &__checkboxList{
     @include displayFlex(flex-start, flex-start, column);
     width: 100%;
   }
-  &-label{
+  &__label{
     margin: 15px 0 0 35px;
     width: 100%;
   }
-  &-input{
+  &__input{
     opacity: 0;
     position: absolute;
     z-index: -1;
-    &:hover + .filterItem-icon{
+    &:hover + .filter-item__icon{
       border: $violet solid 2px;
       transition: .2s;
     }
   }
-  &-icon {
+  &__icon {
     border: $font-primary solid 2px;
     border-radius: 50%;
     width: 19px;
@@ -39,14 +39,15 @@
       transition: .2s;
     }
   }
-  &-icon_checked{
+  &__icon--checked{
     &:before{
       content: url($checked);
       position: absolute;
-      left: 4px;
+      top: -2px;
+      left: 2px;
     }
   }
-  &-selector{
+  &__selector{
     display: flex;
     justify-content: space-between;
     width: calc(100% - 38px);
@@ -54,14 +55,14 @@
     top: 2px;
     cursor: pointer;
   }
-  &-selectorText{
+  &__selector-text{
     font-size: 14px;
     font-weight: 500;
   }
-  &-selectorCount{
+  &__selector-count{
 
   }
-  &-title{
+  &__title{
     margin: 10px 5px 0 3px;
     font-weight: 600;
     letter-spacing: 0.15rem;

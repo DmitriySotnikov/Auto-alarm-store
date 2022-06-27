@@ -1,8 +1,6 @@
 $heights-slider: 500px;
 $widths-slider: 100%;
 
-// ЦВЕТА ВЫНЕСТИ!!! Или поменять значения!!! Стрелки переделать!
-
 .slider {
   z-index: 30;
   height: $heights-slider;
@@ -87,7 +85,8 @@ $widths-slider: 100%;
   &__slide-text {
     width: 100%;
     height: 100%;
-    color: $font-primary;
+    color: $cart-count;
+    font-weight: 800;
     font-size: 50px;
     position: absolute;
     text-align: center;
@@ -95,7 +94,7 @@ $widths-slider: 100%;
     z-index: 1;
     &--description {
       top: 65%;
-      font-size: 30px;
+      font-size: 50px;
     }
   }
 }

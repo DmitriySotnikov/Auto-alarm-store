@@ -7,7 +7,7 @@ interface DotsProps {
     title: string
     description: string
   }[]
-  onclick: (index: number) => void
+  onclick: (index: number) => void;
 }
 
 export const Tabs: FC<DotsProps> = ({ activeIndex, onclick, sliderImage }) => {
