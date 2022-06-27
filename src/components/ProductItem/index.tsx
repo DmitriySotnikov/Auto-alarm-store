@@ -3,8 +3,13 @@ import heart from "../../assets/icon/heart.svg"
 import {Link} from "react-router-dom";
 import {products} from "../../util/catalog-date"
 import img from "../../assets/icon/ux4150.jpg"
+import {productApi} from "../../service/ProductService"
 
 export const ProductItem: FC = () => {
+
+    const { data } = productApi.useGetAllProductsQuery(5)
+
+    console.log( data )
 
     return (
         <div className="product-item__container">

@@ -1,0 +1,62 @@
+[
+    {
+      "id": 0,
+      "name": "Pandora DXL - UX 4150",
+      "price": "49 914",
+      "description": "",
+      "category": "Автосигнализации",
+      "rating": {
+        "rate": 3,
+        "count": 3
+      },
+      "img": ""
+    },
+    {
+      "id": 1,
+      "name": "Pandora DX-9x LoRa",
+      "price": "23 545",
+      "description": "",
+      "category": "Автосигнализации",
+      "rating": {
+        "rate": 5,
+        "count": 8
+      },
+      "img": ""
+    },
+    {
+      "id": 2,
+      "name": "Pandora DX-6x LoRa",
+      "price": "15 675",
+      "description": "",
+      "category": "Автосигнализации",
+      "rating": {
+        "rate": 4,
+        "count": 1
+      },
+      "img": ""
+    },
+    {
+      "id": 3,
+      "name": "Pandect X-1900BT",
+      "price": "38 757",
+      "description": "",
+      "category": "Автосигнализации",
+      "rating": {
+        "rate": 2,
+        "count": 0
+      },
+      "img": ""
+    },
+    {
+      "id": 4,
+      "name": "Pandora DX-57R",
+      "price": "15 515",
+      "description": "",
+      "category": "Автосигнализации",
+      "rating": {
+        "rate": 1,
+        "count": 15
+      },
+      "img": ""
+    }
+]
